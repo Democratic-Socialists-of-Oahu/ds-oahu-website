@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: 'S-Black';
+    src:
+        url('StyreneB-Black.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-Bold';
+    src:
+        url('StyreneB-Bold.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-Regular';
+    src:
+        url('StyreneB-Regular.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: 'S-Bold', sans-serif;
+}
+
+body {
+    font-family: 'S-Regular', sans-serif;
+}
+
+.icon {
+    max-width: 32px;
+    max-height: 32px;
+    height: 32px;
+    width: auto;
+    margin-top: -4px;
+}
+
+.jumbotron {
+    background-color :#C1C0BF;
+    margin-top: 256px;
+}
