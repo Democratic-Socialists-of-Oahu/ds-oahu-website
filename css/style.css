@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'S-Black';
     src:
-        url('StyreneB-Black.otf')
+        url('../fonts/StyreneB-Black.otf')
         format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'S-Bold';
     src:
-        url('StyreneB-Bold.otf')
+        url('../fonts/StyreneB-Bold.otf')
         format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'S-Regular';
     src:
-        url('StyreneB-Regular.otf')
+        url('../fonts/StyreneB-Regular.otf')
         format('opentype');
     font-weight: normal;
     font-style: normal;
