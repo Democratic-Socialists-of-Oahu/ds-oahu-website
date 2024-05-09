@@ -1,42 +1,41 @@
+/* Define font faces */
 @font-face {
-    font-family: 'S-Black';
-    src:
-        url('../fonts/StyreneB-Black.otf')
-        format('opentype');
-    font-weight: normal;
+    font-family: 'Styrene';
+    src: url('../fonts/StyreneB-Black.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'S-Bold';
-    src:
-        url('../fonts/StyreneB-Bold.otf')
-        format('opentype');
-    font-weight: normal;
+    font-family: 'Styrene';
+    src: url('../fonts/StyreneB-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'S-Regular';
-    src:
-        url('../fonts/StyreneB-Regular.otf')
-        format('opentype');
-    font-weight: normal;
+    font-family: 'Styrene';
+    src: url('../fonts/StyreneB-Regular.otf') format('opentype');
+    font-weight: 400;
     font-style: normal;
 }
 
+/* Apply font families */
 h1 {
-    font-family: 'S-Bold', sans-serif;
+    font-family: 'Styrene', sans-serif;
+    font-weight: 700;
 }
 
 body {
-    font-family: 'S-Regular', sans-serif;
+    font-family: 'Styrene', sans-serif;
+    font-weight: 400;
 }
 
 p {
     font-size: 1.4rem;
 }
 
+/* Instagram icon */
 .bi-instagram {
     font-size: 1.6rem;
     color: #FFFFFF;
@@ -44,6 +43,7 @@ p {
     width: 32px;
 }
 
+/* Navbar styling */
 .navbar {
     background-color: #872D23;
 }
