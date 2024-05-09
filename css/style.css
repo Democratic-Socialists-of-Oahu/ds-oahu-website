@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'S-Black';
     src:
@@ -26,7 +25,6 @@
     font-style: normal;
 }
 
-
 h1 {
     font-family: 'S-Bold', sans-serif;
 }
@@ -35,15 +33,15 @@ body {
     font-family: 'S-Regular', sans-serif;
 }
 
-.icon {
-    max-width: 32px;
-    max-height: 32px;
-    height: 32px;
-    width: auto;
-    margin-top: -4px;
+p {
+    font-size: 1.4rem;
 }
 
-.jumbotron {
-    background-color :#C1C0BF;
-    margin-top: 256px;
+.bi-instagram{
+    font-size: 1.6rem;
+    color: #FFFFFF
+}
+
+.navbar {
+    background-color: #872D23;
 }
