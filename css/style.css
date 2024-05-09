@@ -37,9 +37,11 @@ p {
     font-size: 1.4rem;
 }
 
-.bi-instagram{
+.bi-instagram {
     font-size: 1.6rem;
-    color: #FFFFFF
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
 }
 
 .navbar {
