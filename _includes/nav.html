@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm navbar-dark mt-3">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
+    <div class="navbar-nav">
+      {% for item in site.data.nav %}
+        {% if page.url == item.link %}
+        <a class="nav-item nav-link active" href="{{ item.link }}">{{ item.name }}<span class="sr-only">(current)</span></a>
+        {% else %}
+        <a class="nav-item nav-link" href="{{ item.link }}">{{ item.name }}</span></a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="socials text-center my-auto">
+    <a class="bi bi-github" href="https://github.com/Democratic-Socialists-of-Oahu" target="_blank"></a>
+    <a class="bi bi-instagram" href="https://www.instagram.com/ds.of.oahu/" target="_blank"></a>
+    </div>
+  </div>
+</nav>
