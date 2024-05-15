@@ -1,2 +1,6 @@
 *.sw*
 _site/
+run.bat
+Gemfile
+Gemfile.lock
+_config.yml
