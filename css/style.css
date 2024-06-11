@@ -33,7 +33,7 @@ p {
     font-size: 1.4rem;
 }
 
-a:hover {
+.bi:hover {
     color: #FFFFFF;
     opacity: 1.0;
 }
@@ -54,5 +54,5 @@ a:hover {
 .socials {
     display: grid;
     grid-auto-flow: column;
-    width: 64px;
+    width: 96px;
 }
