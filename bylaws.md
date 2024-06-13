@@ -116,18 +116,18 @@ layout: default
 
 #### Article XI. Secession Clause
 1. Given the occupation, colonization, and militarization of Kō Hawaiʻi Pae ʻĀina by the United States of America, DSO shall secede from the National DSA in the event that the National DSA adopts positions and/or takes actions deemed by DSO to be contrary to the interest of the people and the ʻāina of Kō Hawaiʻi Pae ʻĀina. Secession would require a two-thirds (⅔) majority vote at a GBM with quorum participating.
-<div id="accordion">
-   <div class="card">
+<div id="accordion" class="qr-accordion">
+   <div class="card qr-card">
      <div class="card-header" id="headingOne">
        <h5 class="mb-0">
-         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-           Share
+         <button class="btn btn-link collapsed qr-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+           qr 🔗
          </button>
        </h5>
      </div>
  
      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-       <div class="card-body">
+       <div class="card-body qr-card-body">
          <b>dsoahu.org/bylaws</b><br>
          <img src="images/qr/dsoahu.org-bylaws.png">
        </div>
