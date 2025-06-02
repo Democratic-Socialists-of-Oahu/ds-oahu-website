@@ -3,7 +3,7 @@
 	export let newsItem: NewsItemType;
 </script>
 
-<div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow-sm m-4 bg-[#d7e7b5]">
+<div class="max-w-sm rounded-lg border border-gray-200 shadow-sm m-4 bg-[#d7e7b5]">
 	{#if newsItem.image}
 		<a href="#">
 			<img class="rounded-t-lg" src={newsItem.image} alt="" />
