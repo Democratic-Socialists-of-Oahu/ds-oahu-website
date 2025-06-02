@@ -23,6 +23,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          DATABASE_URL: 'postgres://postgres:postgres@localhost:5432/hotu'
         run: |
           npm run build
 
