@@ -1,7 +1,6 @@
 <script lang="ts">
 	import NavBarDropDown from '$lib/NavBarDropDown.svelte';
 
-	import logo from '$lib/images/logo/dso_logo_128.png';
 	import { page } from '$app/state';
 
 	import type { NavItemType, SocialType } from '$lib/Types';
@@ -12,7 +11,7 @@
 <div class="justify-items-center">
 	<header class="mb-4 mt-12 justify-items-center">
 		<a href="/">
-			<img class="mb-3" src={logo} alt="DSO Logo" width="120" height="120" />
+			<img class="mb-3" src="/images/photo.jpg" alt="DSO Logo" width="120" height="120" />
 		</a>
 		<h1 class="font-StyreneB text-center text-4xl font-bold">Democratic Socialists of O'ahu</h1>
 	</header>
