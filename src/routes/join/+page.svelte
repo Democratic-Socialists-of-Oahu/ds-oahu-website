@@ -1,5 +1,5 @@
 <h3 style="text-align: center; padding-top: 20px;">
-	<a href="https://actionnetwork.org/events/welcome-to-dso-2/" target="_blank"
+	<a href="https://actionnetwork.org/campaigns/welcome-to-dso/" target="_blank"
 		>Join our next welcome call! Click for information.</a
 	>
 </h3>

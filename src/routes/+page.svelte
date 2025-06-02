@@ -17,7 +17,7 @@
 </p>
 <p class="mb-4">
 	<a
-		href="https://actionnetwork.org/events/welcome-to-dso-2/"
+		href="https://actionnetwork.org/campaigns/welcome-to-dso/"
 		target="_blank"
 		class="text-blue-600 visited:text-purple-600 hover:text-blue-800 hover:underline"
 		>Join our next welcome call</a
