@@ -1,18 +1,38 @@
-# Democratic Socialists of O‘ahu Website
+# sv
 
-https://dsoahu.org/
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-The website is deployed directly off of `main` with [GitHub Pages](https://docs.github.com/en/pages), and uses [Jekyll](https://jekyllrb.com/docs/).
+## Creating a project
 
-## Contribution Guidelines
+If you're seeing this, you've probably already done this step. Congrats!
 
-There are no restrictions on `main`, but feel free to open a pull request to have changes reviewed. See GitHub Issues for the backlog.
+```bash
+# create a new project in the current directory
+npx sv create
 
-## Getting Started
-Choose your favorite Integrated Development Environment (IDE) aka. text editor
+# create a new project in my-app
+npx sv create my-app
+```
 
-### Windows
-1. Enable Windows Subsystem for Linux (WSL)
-2. Install [Ruby/Jekyll](https://jekyllrb.com/docs/installation/) on WSL
-3. Navigate to the project directory
-4. Run `wsl -e bundle exec jekyll serve`
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

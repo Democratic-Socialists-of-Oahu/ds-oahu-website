@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@theme {
+    --color-brick: #872D23;
+}
+
+@font-face {
+    font-family: 'Styrene';
+    src: url('$lib/fonts/StyreneB-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Styrene';
+    src: url('$lib/fonts/StyreneB-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Styrene';
+    src: url('$lib/fonts/StyreneB-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

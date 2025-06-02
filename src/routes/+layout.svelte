@@ -1,0 +1,85 @@
+<script lang="ts">
+	// This can be false if you're using a fallback (i.e. SPA mode)
+	export const prerender = true;
+
+	import '../app.css';
+	let { children } = $props();
+
+	import NavBar from '$lib/NavBar.svelte';
+	import Footer from '$lib/Footer.svelte';
+
+	const navItems = [
+		{
+			id: 1,
+			label: 'About',
+			route: '/',
+			children: []
+			// children: [{ id: 1, label: 'Mailing List', route: '/mailing-list' }]
+		},
+		{
+			id: 2,
+			label: 'Bylaws',
+			route: '/bylaws',
+			children: []
+			// children: [{ id: 1, label: 'Mailing List', route: '/mailing-list' }]
+		},
+		{
+			id: 3,
+			label: 'Calendar',
+			route: '/calendar',
+			children: []
+			// children: [{ id: 1, label: 'Past Events', route: '/past' }]
+		},
+		{
+			id: 4,
+			label: 'Join',
+			route: '/join',
+			children: []
+			// children: [{ id: 1, label: 'Eviction', route: '/eviction' }]
+		},
+		{
+			id: 5,
+			label: 'Red Star Advertiser',
+			route: '/redstar',
+			children: []
+			// children: [{ id: 1, label: 'Eviction', route: '/eviction' }]
+		}
+	];
+
+	const socials = [
+		{
+			id: 1,
+			class: 'bi-github',
+			label: 'github-link',
+			href: 'https://github.com/Democratic-Socialists-of-Oahu',
+			img: '',
+			alt: 'DSO GitHub link'
+		},
+		{
+			id: 2,
+			class: 'bi-instagram',
+			label: 'instagram-link',
+			href: 'https://www.instagram.com/ds.of.oahu/',
+			img: '',
+			alt: 'DSO Instagram link'
+		}
+	];
+</script>
+
+<NavBar {navItems} {socials} />
+
+<main class="
+	font-StyreneB
+	m-4
+    max-w-xl
+    md:max-w-3xl
+    lg:max-w-5xl
+    xl:max-w-6xl
+	justify-self-center
+	text-center
+	text-2xl
+">
+	{@render children()}
+</main>
+
+<Footer />
