@@ -7,6 +7,9 @@ const config = {
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : '/ds-oahu-website'
+		},
+		prerender: {
+			handleHttpError: 'warn'
 		}
 	}
 };
