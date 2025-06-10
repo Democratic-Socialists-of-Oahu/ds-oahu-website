@@ -8,7 +8,7 @@ export type NavItemType = {
 	id: number;
 	label: string;
 	route: string;
-	children: SubNavItemType[];
+	children?: SubNavItemType[];
 };
 
 export type SocialType = {
@@ -25,4 +25,22 @@ export type NewsItemType = {
 	href: string;
 	content: string;
 	source: string;
+};
+
+export type Editorial = {
+	paragraphs: string[];
+	author: string;
+};
+
+export type RedStarEvent = {
+	when: string[];
+	title: string[];
+};
+
+export type RedStarIssue = {
+	number: number;
+	date: Date;
+	newsItems?: NewsItemType[];
+	editorial?: Editorial;
+	events?: RedStarEvent[];
 };

@@ -1,7 +1,8 @@
 <script lang="ts">
-	import NavBarDropDown from '$lib/NavBarDropDown.svelte';
-
 	import { page } from '$app/state';
+	import { slide } from 'svelte/transition';
+
+	import NavBarDropDown from '$lib/NavBarDropDown.svelte';
 
 	import type { NavItemType, SocialType } from '$lib/Types';
 	export let navItems: NavItemType[];
@@ -16,11 +17,91 @@
 		<h1 class="font-StyreneB text-center text-4xl font-bold">Democratic Socialists of O'ahu</h1>
 	</header>
 
-	<nav class="flex justify-between bg-[#872D23] p-4 max-w-6xl w-full" id="navbar">
+	<nav class="flex w-full max-w-6xl justify-between bg-[#872D23] p-4" id="navbar">
 		<div class="flex" id="navbar-nav">
 			{#each navItems as navItem}
-				<a
-					class="
+				{#if navItem.children}
+					<NavBarDropDown let:hovering={active}>
+						<a
+							href={navItem.route}
+							class="
+								nav-item
+								nav-link
+								mr-4
+								{page.url.pathname.includes(navItem.route) ? 'font-bold opacity-100' : 'font-semibold opacity-50'}
+								text-white
+								hover:opacity-80
+							"
+							id="menu-button"
+							aria-expanded="true"
+							aria-haspopup="true"
+						>
+							{navItem.label}
+						</a>
+
+						<!--
+						Dropdown menu, show/hide based on menu state.
+					
+						Entering: "transition ease-out duration-100"
+							From: "transform opacity-0 scale-95"
+							To: "transform opacity-100 scale-100"
+						Leaving: "transition ease-in duration-75"
+							From: "transform opacity-100 scale-100"
+							To: "transform opacity-0 scale-95"
+						-->
+						{#if navItem.children}
+							{#if active}
+								<div
+									transition:slide|global
+									class="
+										absolute
+										z-10
+										m-0
+										flex
+										flex-col
+										justify-center
+										divide-y
+										divide-red-500
+										rounded-md
+										bg-red-800
+										bg-opacity-80
+										shadow-lg
+										ring-1
+										ring-black
+										ring-opacity-5
+										focus:outline-none
+									"
+									role="menu"
+									aria-orientation="vertical"
+									aria-labelledby="menu-button"
+									tabindex="-1"
+								>
+									{#each navItem.children as child}
+										<a
+											href={child.route}
+											class="
+												m-0
+												px-4
+												py-2
+												text-sm
+												font-medium
+												text-white
+												hover:bg-red-500
+											"
+											role="menuitem"
+											tabindex="-1"
+											id="menu-item-0"
+										>
+											{child.label}
+										</a>
+									{/each}
+								</div>
+							{/if}
+						{/if}
+					</NavBarDropDown>
+				{:else}
+					<a
+						class="
 					nav-item
 					nav-link
 					mr-4
@@ -28,13 +109,10 @@
 					text-white
 					hover:opacity-80
 					"
-					href={navItem.route}
-					class:font-bold={page.url.pathname === navItem.route}
-					>{navItem.label}</a
-				>
-				{#each navItem.children as child}
-					<NavBarDropDown />
-				{/each}
+						href={navItem.route}
+						class:font-bold={page.url.pathname === navItem.route}>{navItem.label}</a
+					>
+				{/if}
 			{/each}
 		</div>
 

@@ -12,37 +12,28 @@
 		{
 			id: 1,
 			label: 'About',
-			route: '/',
-			children: []
-			// children: [{ id: 1, label: 'Mailing List', route: '/mailing-list' }]
+			route: '/'
 		},
 		{
 			id: 2,
 			label: 'Bylaws',
-			route: '/bylaws',
-			children: []
-			// children: [{ id: 1, label: 'Mailing List', route: '/mailing-list' }]
+			route: '/bylaws'
 		},
 		{
 			id: 3,
 			label: 'Calendar',
-			route: '/calendar',
-			children: []
-			// children: [{ id: 1, label: 'Past Events', route: '/past' }]
+			route: '/calendar'
 		},
 		{
 			id: 4,
 			label: 'Join',
-			route: '/join',
-			children: []
-			// children: [{ id: 1, label: 'Eviction', route: '/eviction' }]
+			route: '/join'
 		},
 		{
 			id: 5,
 			label: 'Red Star Advertiser',
 			route: '/redstar',
-			children: []
-			// children: [{ id: 1, label: 'Eviction', route: '/eviction' }]
+			children: [{ id: 1, label: 'Past Issues', route: '/redstar/past' }]
 		}
 	];
 
