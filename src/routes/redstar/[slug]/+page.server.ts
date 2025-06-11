@@ -15,11 +15,13 @@ export const load: PageServerLoad = async ({ params }) => {
 };
 
 export const entries: EntryGenerator = () => {
-	return [
-		{ slug: '1' },
-		{ slug: '2' },
-		{ slug: '3' }
-	];
+	const slugs = [];
+	let i = 1;
+	while (i <= issues.length) {
+		slugs.push({ slug: `${i}` });
+		i++;
+	}
+	return slugs;
 };
 
 export const prerender = true;

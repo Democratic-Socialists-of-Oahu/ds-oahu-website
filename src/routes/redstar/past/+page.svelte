@@ -37,7 +37,7 @@
 			<div class="flex shrink-0 items-center gap-x-4">
 				{#if issue.editorial}
 					<div class="hidden sm:flex sm:flex-col sm:items-end">
-						<p class="text-sm text-gray-900">{issue.editorial.author},</p>
+						<p class="text-sm text-gray-900">{issue.editorial.author}</p>
 						<p class="text-xs text-gray-900">editorial</p>
 					</div>
 				{/if}
