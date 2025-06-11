@@ -1,7 +1,10 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
+	import { page } from '$app/state';
+	import { fade } from 'svelte/transition';
 
 	import Card from '$lib/Card.svelte';
+	import NavBarDropDown from '$lib/NavBarDropDown.svelte';
 
 	const months = [
 		'January',
@@ -19,6 +22,16 @@
 	];
 
 	let { data }: PageProps = $props();
+	let editorialCopied: boolean = $state(false);
+	let eventsCopied: boolean = $state(false);
+
+	function editorialHandler() {
+		editorialCopied = false;
+	}
+
+	function eventsHandler() {
+		eventsCopied = false;
+	}
 </script>
 
 <div class="mb-4 flex w-full content-center justify-center justify-self-center bg-[#f9f3c6] py-2">
@@ -40,7 +53,7 @@
 </div>
 
 {#if data.newsItems}
-	<div class="text-left indent-12">In the News...</div>
+	<div id="news" class="text-left indent-12">In the News...</div>
 
 	<div
 		class="
@@ -61,7 +74,31 @@
 {/if}
 
 {#if data.editorial}
-	<div class="my-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white">
+	<div
+		id="editorial"
+		class="relative my-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white"
+	>
+		<NavBarDropDown let:hovering={active}>
+			<button
+				onclick={function () {
+					const linkText = page.url.href + '#' + this.parentElement.parentElement.id;
+					navigator.clipboard.writeText(linkText);
+					editorialCopied = true;
+				}}
+				class="absolute left-0 ml-8 cursor-pointer text-white opacity-20 transition duration-200 ease-in-out hover:opacity-80"
+				>#</button
+			>
+			{#if active}
+				<div transition:fade={{ duration: 100 }} onoutroend={editorialHandler} class="shadow-lg">
+					<div class="absolute bottom-14 rounded-md bg-red-700 p-2 text-sm">
+						{#if editorialCopied}Copied!{:else}Copy link to Clipboard{/if}
+					</div>
+					<div
+						class="absolute bottom-10 left-7 border-l-[12px] border-r-[12px] border-t-[18px] border-l-transparent border-r-transparent border-t-red-700"
+					></div>
+				</div>
+			{/if}
+		</NavBarDropDown>
 		This Week’s Editorial
 	</div>
 
@@ -77,7 +114,31 @@
 {/if}
 
 {#if data.events}
-	<div class="mt-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white">
+	<div
+		id="events"
+		class="relative mt-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white"
+	>
+		<NavBarDropDown let:hovering={active}>
+			<button
+				onclick={function () {
+					const linkText = page.url.href + '#' + this.parentElement.parentElement.id;
+					navigator.clipboard.writeText(linkText);
+					eventsCopied = true;
+				}}
+				class="absolute left-0 ml-8 cursor-pointer text-white opacity-20 transition duration-200 ease-in-out hover:opacity-80"
+				>#</button
+			>
+			{#if active}
+				<div transition:fade={{ duration: 100 }} onoutroend={eventsHandler} class="shadow-lg">
+					<div class="absolute bottom-14 rounded-md bg-red-700 p-2 text-sm">
+						{#if eventsCopied}Copied!{:else}Copy link to Clipboard{/if}
+					</div>
+					<div
+						class="absolute bottom-10 left-7 border-l-[12px] border-r-[12px] border-t-[18px] border-l-transparent border-r-transparent border-t-red-700"
+					></div>
+				</div>
+			{/if}
+		</NavBarDropDown>
 		Upcoming Events
 	</div>
 
