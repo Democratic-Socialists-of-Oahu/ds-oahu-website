@@ -102,6 +102,16 @@
 		This Week’s Editorial
 	</div>
 
+	{#if data.editorial.title}
+		<div>
+			<div class="font-bold">{data.editorial.title}</div>
+
+			{#if data.editorial.subtitle}
+				<div class="text-[18px] italic">{data.editorial.subtitle}</div>
+			{/if}
+		</div>
+	{/if}
+
 	<div class="mb-8 w-full max-w-[75%] justify-self-center">
 		{#each data.editorial.paragraphs as paragraph}
 			<div class="my-4 px-6 text-left indent-8 text-base">

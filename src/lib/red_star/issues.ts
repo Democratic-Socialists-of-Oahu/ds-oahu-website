@@ -2,6 +2,84 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 4,
+		date: new Date('2025-06-12'),
+		newsItems: [
+			{
+				href: 'https://apnews.com/article/los-angeles-protests-national-guard-trump-14c9dda32663d7d2c45f2b1c5a1d219c',
+				content:
+					'The arrest of labor leader David Huerta while protesting immigration raids spurred large protests in LA, which were escalated by local law enforcement and even further by the presence of the National Guard.',
+				source: 'AP News'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/06/victims-loved-ones-domestic-violence-experts-question-soldiers-sentence-killing-pregnant-wife/',
+				content:
+					'An American soldier stationed at Schofield was sentenced to only 23 years by a military court after killing his pregnant local wife. Domestic violence and legal experts question why Army prosecutors were willing to give the soldier such a favorable plea deal despite the amount of evidence.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.aljazeera.com/news/2025/6/4/aboriginal-community-shaken-by-second-death-in-australian-police-custody',
+				content:
+					'The family of a 24-year old special needs Warlpiri man is demanding answers following his death in Australian police custody. This death occurs as the Country Liberal Party calls for increased policing and ramps up their attacks on Aboriginal groups.',
+				source: 'Al Jazeera'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/07/report-reveals-hawaii-beaches-among-most-polluted-nationwide/',
+				content:
+					"A report shows that many of Hawaiʻi’s beaches and streams fail to pass water quality tests . The Department of Health's programs to monitor water quality and address pollution are in jeopardy as it is funded in part by the Environmental Protection Agency, which faces budget cuts.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.thegardenisland.com/2025/06/07/hawaii-news/hawaii-delegation-pushes-navy-for-information-on-kaula-training-plan/?TGI=24f164d774dfb5644f046f502c9e2955194be99b',
+				content:
+					'Due to recent American provocations of China, the military seeks to double bombardment training on Kaʻula, a small island off the coast of Niʻihau and nesting ground for 18 species of birds. The military claims that the exercise will have minimal environmental impact due to it not being live fire, despite not looking for an alternative site.',
+				source: 'The Garden Island'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/09/maui-housing-advocates-urge-council-phase-out-short-term-rentals/',
+				content:
+					"The Lahaina Strong coalition is urging the Maui Housing and Land Use Committee to phase out short-term rentals in apartment-zoned districts, which would increase Maui's long-term housing by 13%.",
+				source: 'Hawaii News Now'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				"Over the past four days news of the protests against ICE raids and escalation by law enforcement and the federal government have been national headlines. We've been seeing for months now an increase in ICE raids and the level of force being used, separating and devastating families all over the country. Simultaneous ICE raids on Saturday, June 7, prompted responses from local residents to protect those in danger of being detained. LAPD and federal law enforcement responded with excessive violence that escalated the situation. The news coverage coming out of LA has been shocking, moreso because of the narrative the media has been spinning around violent mobs, rioting, and looting.",
+				`ICE agents terrorize communities, racially profiling and indiscriminately detaining our families and children under false pretenses. They use plain clothes, unmarked vehicles, and lie to gain access to schools and homes without warrants, even going as far as abducting migrants showing up to required court hearings. On Monday, June 9th, in response to the brutality of the ICE raids, peaceful protests were coordinated across dozens of cities across the U.S. In LA, marches played well known Latino songs like "La Chona" and broke out into dance. At a protest in front of a hotel housing ICE, a live band made up of jornaleros (day laborers) played for the protestors. It's frustrating that the media refuses to cover the peaceful protests and the beautiful acts of solidarity, and instead fixate on isolated acts of property damage.`,
+				"It's easy to think we are not affected here in Hawaiʻi. But the same government that oppresses and brutalizes on the continent, brutalizes and oppresses here too. This is the same government that illegally overthrew the Hawaiian Kingdom, uses its land for target practice, and contaminates its water. And this government is currently conducting ICE raids in Hawaiʻi and are showing up to our homes and places of work too. Just last month 30 Filipino teachers in Maui were detained.",
+				"I want to ask, where is your humanity? We are workers, parents, and community members just like you. I don't have to tell you how every day we leave work tired, sweaty, and hurting, because you do too. I don't have to tell you about doing everything we can to put on the table and keep a roof over our heads because you do too. I don't have to tell you about how much we love our family and would do whatever we could to keep them safe and to provide for them, because you do too. We are the working class. We fight the same fight. Migrants are not the problem, but it is advantageous to the U.S. government to frame it as such. We are in a time of fascism where unity amongst the people is a danger to those wanting to generate wealth. Instead of blaming migrants for stealing jobs, ask why companies are exploiting migrant labor. Migrant labor is more profitable because they can be paid less and worked harder. Why should we live in a system that is designed to exploit our work to make a few people very comfortable?",
+				"It is easy to be scared. It is easy to be hateful and to blame things on other vulnerable people. It's easy to be a coward. The biggest authority figure in our lives, our government, encourages it. It's so much harder to care. It's harder to love and it's harder to work through differences. Now is a time to be brave. Be brave and stand up for others. Connect with your friends and talk about what's happening. Educate yourselves and organize your communities."
+			],
+			title: "What's Happening in LA?",
+			subtitle: 'From a First-Generation Immigrant Comrade'
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5 pm @', 'Thomas Square'],
+
+				title: ['Food Not Bombs [FNB]', 'Potluck, Mutual Aid, Community Meeting']
+			},
+
+			{
+				when: ['Thursday, June 19', '6pm @', 'Zoom'],
+
+				title: ['Democratic Socialists of Oʻahu [DSO]', 'Immigration Red Talk']
+			},
+
+			{
+				when: ['Saturday, June 21', '6:30pm @', 'Manoa Public Library'],
+
+				title: ['DSO', 'Book Club']
+			},
+
+			{
+				when: ['Sunday, June 29', '5-7pm @', 'ʻAina Haina Public Library'],
+
+				title: ['DSO', 'History of Modern Hawaiʻi', 'Teach-In']
+			}
+		]
+	},
+	{
 		number: 3,
 		date: new Date('2025-05-29'),
 		newsItems: [

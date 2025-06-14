@@ -29,7 +29,9 @@ export type NewsItemType = {
 
 export type Editorial = {
 	paragraphs: string[];
-	author: string;
+	author?: string;
+	title?: string;
+	subtitle?: string;
 };
 
 export type RedStarEvent = {
