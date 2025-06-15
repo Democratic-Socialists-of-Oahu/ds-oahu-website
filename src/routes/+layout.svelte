@@ -59,7 +59,7 @@
 <main class="
 	font-StyreneB
 	grid
-	m-4
+	my-4
     max-w-xl
     md:max-w-3xl
     lg:max-w-5xl
