@@ -102,6 +102,8 @@
 		This Week’s Editorial
 	</div>
 
+	<!--  -->
+
 	{#if data.editorial.title}
 		<div>
 			<div class="font-bold">{data.editorial.title}</div>
