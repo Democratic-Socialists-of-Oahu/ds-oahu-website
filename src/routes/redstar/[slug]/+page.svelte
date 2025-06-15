@@ -112,7 +112,7 @@
 		</div>
 	{/if}
 
-	<div class="mb-8 w-full max-w-[75%] justify-self-center">
+	<div class="mb-8 w-full max-w-[100%] justify-self-center">
 		{#each data.editorial.paragraphs as paragraph}
 			<div class="my-4 px-6 text-left indent-8 text-base">
 				{paragraph}
