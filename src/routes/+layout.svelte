@@ -1,7 +1,4 @@
 <script lang="ts">
-	// This can be false if you're using a fallback (i.e. SPA mode)
-	export const prerender = true;
-
 	import '../app.css';
 	let { children } = $props();
 
@@ -61,6 +58,7 @@
 
 <main class="
 	font-StyreneB
+	grid
 	m-4
     max-w-xl
     md:max-w-3xl

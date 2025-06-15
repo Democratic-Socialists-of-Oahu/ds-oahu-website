@@ -5,14 +5,14 @@
 
 <div class="max-w-sm rounded-lg border border-gray-200 shadow-sm m-4 bg-[#d7e7b5]">
 	{#if newsItem.image}
-		<a href="#">
+		<a href={newsItem.href}>
 			<img class="rounded-t-lg" src={newsItem.image} alt="" />
 		</a>
 	{/if}
 
 	<div class="p-5">
 		{#if newsItem.title}
-			<a href="#">
+			<a href={newsItem.href}>
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
 					{newsItem.title}
 				</h5>

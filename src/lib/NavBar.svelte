@@ -9,7 +9,7 @@
 	export let socials: SocialType[];
 </script>
 
-<div class="justify-items-center">
+<div class="justify-items-center justify-self-center w-full max-w-6xl">
 	<header class="mb-4 mt-12 justify-items-center">
 		<a href="/">
 			<img class="mb-3" src="/images/dso_logo_128.png" alt="DSO Logo" width="120" height="120" />

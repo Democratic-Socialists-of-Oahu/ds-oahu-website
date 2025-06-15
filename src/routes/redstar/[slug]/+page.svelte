@@ -102,8 +102,6 @@
 		This Week’s Editorial
 	</div>
 
-	<!--  -->
-
 	{#if data.editorial.title}
 		<div>
 			<div class="font-bold">{data.editorial.title}</div>
@@ -114,14 +112,16 @@
 		</div>
 	{/if}
 
-	<div class="mb-8 w-full max-w-[100%] md:max-w-[75%] justify-self-center">
+	<div class="mb-4 w-full max-w-[100%] justify-self-center md:max-w-[75%]">
 		{#each data.editorial.paragraphs as paragraph}
 			<div class="my-4 px-6 text-left indent-8 text-base">
 				{paragraph}
 			</div>
 		{/each}
 
-		<div class="my-4 pl-12 text-right text-base">- {data.editorial.author}</div>
+		{#if data.editorial.author}
+			<div class="my-4 pl-12 text-right text-base">- {data.editorial.author}</div>
+		{/if}
 	</div>
 {/if}
 
@@ -154,16 +154,16 @@
 		Upcoming Events
 	</div>
 
-	<table class="border-collapse border-spacing-4 justify-self-center text-base">
+	<table class="mb-8 border-collapse border-spacing-4 justify-self-center text-base">
 		<tbody>
 			{#each data.events as event}
 				<tr>
-					<td class="justify-self-end border-y py-4 pr-4 text-right">
+					<td class="justify-self-end border-t py-4 pr-4 text-right">
 						{#each event.when as line}
 							<div>{line}</div>
 						{/each}
 					</td>
-					<td class="justify-self-start border-y py-4 pl-4 text-left">
+					<td class="justify-self-start border-t py-4 pl-4 text-left">
 						{#each event.title as line}
 							<div>{line}</div>
 						{/each}
