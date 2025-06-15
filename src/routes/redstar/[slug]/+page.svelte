@@ -156,14 +156,14 @@
 
 	<table class="mb-8 border-collapse border-spacing-4 justify-self-center text-base">
 		<tbody>
-			{#each data.events as event}
+			{#each data.events as event, i}
 				<tr>
-					<td class="justify-self-end border-t py-4 pr-4 text-right">
+					<td class:border-t={i > 0} class="justify-self-end py-4 pr-4 text-right">
 						{#each event.when as line}
 							<div>{line}</div>
 						{/each}
 					</td>
-					<td class="justify-self-start border-t py-4 pl-4 text-left">
+					<td class:border-t={i > 0} class="justify-self-start py-4 pl-4 text-left">
 						{#each event.title as line}
 							<div>{line}</div>
 						{/each}
