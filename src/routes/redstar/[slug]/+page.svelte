@@ -76,7 +76,7 @@
 {#if data.editorial}
 	<div
 		id="editorial"
-		class="relative my-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white"
+		class="relative my-4 w-full justify-self-center bg-[#872D23] py-2 font-bold text-white"
 	>
 		<NavBarDropDown let:hovering={active}>
 			<button
@@ -128,7 +128,7 @@
 {#if data.events}
 	<div
 		id="events"
-		class="relative mt-4 w-full max-w-[75%] justify-self-center bg-[#872D23] py-2 font-bold text-white"
+		class="relative mt-4 w-full justify-self-center bg-[#872D23] py-2 font-bold text-white"
 	>
 		<NavBarDropDown let:hovering={active}>
 			<button
