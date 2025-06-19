@@ -65,7 +65,7 @@ export const issues: RedStarIssue[] = [
 			},
 
 			{
-				when: ['Thursday, June 19', '6pm @', 'Zoom'],
+				when: ['Postponed until further notice'],
 
 				title: ['Democratic Socialists of Oʻahu [DSO]', 'Immigration Red Talk']
 			},
