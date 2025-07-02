@@ -3,7 +3,7 @@ import type { RedStarIssue } from '$lib/Types';
 export const issues: RedStarIssue[] = [
 	{
 		number: 5,
-		date: new Date('2025-06-26'),
+		date: new Date('2025-06-26T12:00:00'),
 		newsItems: [
 			{
 				href: 'https://www.hawaiinewsnow.com/2025/06/18/psychiatrist-sues-hawaii-state-hospital-claiming-retaliation/',
@@ -73,7 +73,7 @@ export const issues: RedStarIssue[] = [
 	},
 	{
 		number: 4,
-		date: new Date('2025-06-12'),
+		date: new Date('2025-06-12T12:00:00'),
 		newsItems: [
 			{
 				href: 'https://apnews.com/article/los-angeles-protests-national-guard-trump-14c9dda32663d7d2c45f2b1c5a1d219c',
@@ -155,7 +155,7 @@ export const issues: RedStarIssue[] = [
 	},
 	{
 		number: 3,
-		date: new Date('2025-05-29'),
+		date: new Date('2025-05-29T12:00:00'),
 		newsItems: [
 			{
 				href: 'https://www.hawaiinewsnow.com/2025/05/20/activists-surprised-after-army-willing-let-go-makua-state-land-lease-2029/',
@@ -237,7 +237,7 @@ export const issues: RedStarIssue[] = [
 	},
 	{
 		number: 2,
-		date: new Date('2025-05-15'),
+		date: new Date('2025-05-15T12:00:00'),
 		newsItems: [
 			{
 				href: 'https://www.civilbeat.org/2025/04/pet-projects-and-low-budgets-how-lawmakers-undermine-school-repairs/',
@@ -309,7 +309,7 @@ export const issues: RedStarIssue[] = [
 	},
 	{
 		number: 1,
-		date: new Date('2025-05-01'),
+		date: new Date('2025-05-01T12:00:00'),
 		newsItems: [
 			{
 				href: 'https://www.youtube.com/watch?v=FOJY4JvSB-8',
