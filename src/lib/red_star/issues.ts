@@ -2,6 +2,76 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 5,
+		date: new Date('2025-06-26'),
+		newsItems: [
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/18/psychiatrist-sues-hawaii-state-hospital-claiming-retaliation/',
+				content:
+					'A new lawsuit claims that Hawaii State Hospital leaders retaliated against a psychiatrist for raising concerns about staffing issues and dangerous work conditions. The state hospital has seen multiple recent violent incidents, including a fatal stabbing of a nurse.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://mauinow.com/2025/06/19/maui-council-hears-another-70-testifiers-on-vacation-rental-phase-out-bill-still-more-to-come/',
+				content:
+					'In a Maui Council hearing about the phasing out of short term rentals, Councilmember Tasha Kama said she would not tolerate violent terms like occupiers, illegal invaders, transplants, extractors, colonists, and settlers. After a short recess, she was advised to deal with testimony on a case-by-case basis and members of the public explained that such terms are not violent but accurate descriptors of the situation.',
+				source: 'Maui Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/22/protect-our-keiki-ewa-beach-lead-exposure-awareness-event/',
+				content:
+					'The Sierra Club of Hawaii and the Relocate Puʻuloa Range Coalition held an event to raise awareness of lead exposure at Puʻuloa Beach Park. Their goal is to educate the public and protect local keiki from lead in areas near the Puʻuloa Range Training Facility.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.aljazeera.com/news/2025/6/26/israeli-attacks-kill-more-than-30-people-in-gaza-including-3-near-aid-site',
+				content:
+					'539 Palestinians were killed trying to access food from the US and Israeli backed Gaza Humanitarian Foundation aid distribution sites in the past month. At least 56,259 people have been killed by Israel since it began its latest wave of genocide.',
+				source: 'Al Jazeera'
+			},
+			{
+				href: 'https://www.aljazeera.com/features/2025/6/26/feels-like-heaven-iranians-return-to-tehran-uncertain-of-future',
+				content:
+					'Iranians return to Tehran, shaken by 12 days of bombing by Israel. Sorrow runs deep as people return to destroyed homes and lost family members.',
+				source: 'Al Jazeera'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/06/04/gondola-zipline-project-draws-backlash-north-shore-community/',
+				content:
+					'A North Shore project to build a gondola zipline aiming to attract 1,700 daily visitors as developers modify their plans to comply with their conditional use permit by increasing cattle grazing area while reducing agro-forestry.',
+				source: 'Hawaii News Now'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				"As the American media attempts to sell Iran as the paramount “threat to peace” amid Israel's aggressive provocations in the Middle East, we witness a familiar script play out. China's activities in the South China Sea, Russia's intervention in Ukraine, the propaganda machine leverages public amnesia to replace last week's nemesis with this week's. But these nations don't realistically threaten American civilians, only the imperialist agenda of the American ruling class. After 9/11, American presidents were granted de facto war powers with the authorization to bypass Congress. And a formal declaration of war was absent from every military operation since WWII. So why the relentless media campaign to sell these conflicts to people with no voice in the matter? The answer is simple, fear breeds compliance. A terrified populace will tolerate eroding liberties, unchecked military spending, and endless wars, all to ward off the foreign boogeyman threatening “freedom and democracy”.",
+				"After the fall of the USSR, America scrambled to find new enemies. And their answer came in the form of Al-Qaeda in the aftermath of 9/11. The media conflated Al-Qaeda with the Taliban to justify an invasion of Afghanistan, conveniently forgetting a decade of arming Afghan militants. After initial success, Iraq became the new “threat”, built on fabricated WMD claims and willful amnesia of past American support for Saddam Hussein. As these wars exposed their own pointlessness, the focus shifted to bigger powers. China's Belt and Road Initiative was smeared as “debt trap diplomacy” as the American-backed IMF enforced neoliberal exploitation. Headlines screamed of Russian interference in American elections while the CIA orchestrated coups across Latin America. Iran faced sanctions for hypothetical nuclear weapons, while America hoards a stockpile of over 3,000 nuclear warheads. This is not foreign policy, it is diversionary theater to mask empire-building with moral panic.",
+				'So what is the cost of this machine? A staggering military budget of $866 billion rife with waste and fraud. In 2024, the Pentagon failed its seventh consecutive audit. And as a militarized colony, we suffer an additional burden. As American soldiers deplete our limited housing supply, traumatize our community with acts of violence and reckless endangerment, and engage in sex trafficking of the most vulnerable members of our society, we are expected to thank them for “protecting” us. We are supposed to accept the desecration of the land and poisoning of the water as a necessary evil to ward off the supposed Chinese menace. We are supposed to accept the constant threat of becoming collateral damage in the name of “national security”. How much longer must we endure this indignity?',
+				"It is time for all of us to awaken and reject America's poisonous propaganda. China, Russia, and Iran bear no malice to the people of Hawaiʻi, only the exploitative American-centric world order that insists on using us as human shields. Claims that “others would've colonized us” ignore history. In the age of 19th century imperialism, Hawaiʻi enjoyed strong positive relations with the rest of the world. Both Japan and Britain declined the opportunity to turn Hawaiʻi into a protectorate. It was the only America that lusted for our location as a springboard into Asia. The American military presence only endangers Hawaiʻi, its people, and its land. It is therefore imperative that we reject American propaganda that antagonized China, Russia, Iran, and any other country. We can only cast off our chains when we awaken to recognize the true enemy: American imperialism and the insatiable beast known as the Military-Industrial Complex."
+			],
+			author: 'Jimmy Aoki'
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5:30 pm @', 'Thomas Square'],
+
+				title: ['Food Not Bombs [FNB]', 'Potluck, Mutual Aid, Community Meeting']
+			},
+
+			{
+				when: ['Saturday, July 13', '3pm'],
+
+				title: ['DSO General Membership Meeting']
+			},
+
+			{
+				when: ['Saturday, July 19', '6:30pm @', 'Manoa Public Library'],
+
+				title: ['DSO Book Club']
+			}
+		]
+	},
+	{
 		number: 4,
 		date: new Date('2025-06-12'),
 		newsItems: [
