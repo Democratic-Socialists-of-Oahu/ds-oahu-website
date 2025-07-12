@@ -2,6 +2,88 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 6,
+		date: new Date('2025-07-11T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://www.hawaiinewsnow.com/video/2025/07/06/federal-detention-center-honolulu-take-more-ice-detainees/',
+				content:
+					'With more federal funding for ICE, the Honolulu Federal Detention Center prepares to have immigrant detainees shipped in from the continent. Attorneys worry that transporting immigrants between states will complicate their right to legal representation.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/06/hawai%CA%BBi-senator-didnt-disclose-possible-conflict-of-interest-before-voting/',
+				content:
+					'Senator Donovan Dela Cruz, owner of Kilani Brew, failed to declare a conflict of interest when voting for a bill to protect māmaki tea. Other senators were reluctant to speak up due to Dela Cruz’s power over legislation and appropriations as the head of the Ways and Means Committee. Throughout the 2025 legislative season, no senators have declared a conflict of interest.',
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.kitv.com/news/hawaii-tourism-authority-board-members-resign/article_c9e6677c-b527-48fa-b216-b2822b8f9f28.html',
+				content:
+					'Following the signing of a Senate bill to turn the Hawaii Tourism Authority (HTA) into an advisory board and a series of scandals and infighting within HTA, Gov. Josh Green called for the resignation of the entire board. Following the resignation of all 12 members, Green will now look to appoint a completely new board.',
+				source: 'KITV'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/06/more-than-100-million-cut-from-hawai%ca%bbi-state-budget/',
+				content:
+					'Due to uncertainty in federal funding and lowered tax revenue forecasts, Gov. Green used line-item vetoes to cut $110 million from the state budget. This includes $90 million from Dept of Education support services and $10 million from the Dept of Health adult mental health inpatient program.',
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/08/plausible-credible-dod-inspector-general-backs-red-hill-whistleblowers-retaliation-claims/',
+				content:
+					'The Department of Defense has deemed allegations that an Air Force colonel retaliated against a Red Hill whistleblower credible. Despite this, the colonel has not received consequences and has since retired.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www3.nhk.or.jp/nhkworld/en/news/20250705_01/',
+				content:
+					'South Korean media reported that former President Yoon ordered a drone incursion into North Korea in October to provoke a military response. North Korea claims to have found drone debris in Pyongyang and condemned Seoul for using drones to scatter propaganda leaflets.',
+				source: 'NHK'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				"While I could write another piece about how American imperialism victimizes Hawaiʻi, at a certain point I am merely preaching to the choir. Most readers already understand the negative consequences of our economy's reliance on tourism, the military, and real estate on the land and people of Hawaiʻi. Even the common apolitical resident can recognize these harms. They watched as the Aloha Stadium parking lot filled to the brim with unused rental cars during the COVID shutdown. They feared for the health and safety of themselves and their children when Red Hill's jet fuel leaked into the water supply. They complain about soaring housing and rental costs and the worsening homelessness crisis. They see the chains that bind them, they may even recognize the systemic roots of these problems, yet few call for Hawaiian independence. So why is it that the vast majority cling to a system that endangers their safety and cripples them economically? I posit the reason is a lack of a clear alternative.",
+				"As exploitative as American capitalism is to Hawaiʻi, it remains the system that feeds us and clothes us. In 2023, Hawaii received $11 billion more from the federal government than we paid to it, or nearly $7,000 per capita. Tourism, military and real estate, along with their various support industries sign the paycheck of a massive portion of the population. While sovereignty activists rightfully criticize the faults of this exploitative system, the masses who rely on it for survival are understandably skeptical about uprooting the system that puts food on their plates. So they merely complain, perhaps participate in a protest or two. However, most won't join a movement based on the fundamental idea of upsetting the status quo. If we wish to organize them, it is imperative to offer them a vision of how an independent Hawaiʻi would politically and economically benefit them.",
+				"Discontent is a mighty hammer, yet left unguided it swings wildly in the dark. By failing to provide a clear path forward, we risk letting reactionaries harness this anger. This is how fascism is perpetuated: reactionaries take advantage of anger at a broken system and a powerless left opposition to create simple answers that appeal to the worst forms of bigotry to gain power. Without a defined ideology and alternative to the status quo, we cannot save our discontent neighbors from fascist thought, or expect to create a sustainable movement.",
+				"So how do we create a vision for the future and develop an ideology? The answer is simple, we must share our thoughts, debate them, refine them, and allow them to evolve as we gain more perspectives. We cannot stay within our bubble, instead engage with the community and refine our theories by testing them in the real world. Through this process we can reimagine a future that will provide tangible political, economic, and cultural benefits. We cannot expect to theorize the perfect system for managing an independent Hawaiʻi, but we need to ease the doubts of the many who are sympathetic to our cause yet fearful of what they have to lose by uprooting the status quo. We must acknowledge their legitimate concerns and provide them a reason to want a revolution."
+			],
+			author: 'Jimmy Aoki'
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5:30 pm @', 'Thomas Square'],
+
+				title: ['Food Not Bombs [FNB]', 'Potluck, Mutual Aid, Community Meeting']
+			},
+
+			{
+				when: ['Saturday, July 13', '3pm'],
+
+				title: ['DSO General Membership Meeting']
+			},
+
+			{
+				when: ['Thursday, July 17', '5pm @', 'AnyPlace (RSVP required)'],
+
+				title: ['Trivia Night w/ Hui Aloha ʻĀina [HAA] o Honolulu', 'http://bit.ly/4eVcLqH']
+			},
+
+			{
+				when: ['Saturday, July 19', '6:30pm @', 'Manoa Public Library'],
+
+				title: ['DSO Book Club']
+			},
+
+			{
+				when: ['Sunday, July 27', '9am @', 'Thomas Square'],
+
+				title: ['Lā Hoʻi Hoʻi Ea']
+			}
+		]
+	},
+	{
 		number: 5,
 		date: new Date('2025-06-26T12:00:00'),
 		newsItems: [
