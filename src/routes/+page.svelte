@@ -23,3 +23,7 @@
 		>Join our next welcome call</a
 	> to learn more about us and plug in!
 </p>
+
+<a class="justify-self-center p-4" aria-label="venmo-link" href="https://account.venmo.com/u/demsocoahu" target="_blank">
+	<img class="w-64" src="images/venmo.jpg" alt="venmo link">
+</a>
