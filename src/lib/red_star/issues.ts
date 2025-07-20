@@ -71,7 +71,7 @@ export const issues: RedStarIssue[] = [
 			},
 
 			{
-				when: ['Saturday, July 19', '6:30pm @', 'Manoa Public Library'],
+				when: ['Saturday, July 19', '6:30pm'],
 
 				title: ['DSO Book Club']
 			},
