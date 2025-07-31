@@ -2,6 +2,80 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 7,
+		date: new Date('2025-07-25T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/18/navy-seeks-public-comment-draft-eis-pacific-missile-range-facility/',
+				content:
+					"Public testimony for the draft EIS regarding the Navy's Pacific Missile Range Facility on Polihale Beach (Barking Sands) on Kauaʻi is being accepted until August 1st. Polihale is significant culturally and spiritually to Native Hawaiians, and activists oppose renewal of the lease.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/07/newly-signed-bill-imperils-historic-places-and-burial-sites-critics-say/',
+				content:
+					'Advocates caution that a newly-signed bill by Gov. Green puts historic and cultural sites at risk, after he initially intended to veto it. The bill narrows the definition of “historic properties”, such that many new developments will be able to by-pass an extensive review process.',
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/07/honolulu-water-agency-sues-navy-red-hill-spill/',
+				content:
+					'The Honolulu Board of Water Supply has sued the U.S. Navy for $1.2 billion for Red Hill clean up and prevention of further contamination, after extensive negotiations with the Navy to take responsibility have failed.',
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/06/data-dive-why-new-hawai%ca%bbi-teachers-cant-afford-to-buy-a-house/',
+				content:
+					'The National Council on Teacher Quality released a report last month saying that Hawaiʻi is one of the least affordable places for early career teachers. A Department of Education survey conducted last year found that 41% of employees report being likely to leave due to high housing costs.',
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/10/homeowners-feel-sidelined-after-insurance-companies-cancel-their-storm-coverage/',
+				content: `Homeowners are reporting that insurers are dropping hurricane insurance for single-wall homes due to higher risk. One Haleiwa family that has been paying insurance for 50 years says, “They took our money for all these years, and now they're saying, 'I'm sorry we're not going to insure you.'”`,
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.aljazeera.com/news/2025/7/21/at-least-49-killed-in-gaza-attacks-as-israel-sends-tanks-into-deir-el-balah',
+				content:
+					'Israel begins moving tanks into Deir el-Balah for the first time since Operation Al-Aqsa Flood as 65 more Palestinians have been killed across Gaza. Already displaced Palestinians are forced to flee to the coast and further south as tank shells, airstrikes, naval gunboat artillery, and gunfire destroy homes and lives.',
+				source: 'Al Jazeera'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				'Howzit, readers and non-readers. As I am writing this, it is two days before the 183th Lā Ho’i Ho’i Ea, so I thought it would be a good idea to write about that. To anyone unfamiliar, Lā Ho’i Ho’i Ea is Hawaiian Sovereignty Restoration Day, the real one, none of that July 4th bullshit. In 1882, British businessman Richard Charlton tried to claim Hawaiian lands. He did this by complaining to Captain George Paulet that he was being taken advantage of. This caused George Paulet to write a letter to King Kamehameha III saying that he demanded an audience with the king. After the two disagreed, Paulet threatened to launch a military attack on sovereign Hawaiian lands. Kamehameha III, knowing the strength of the British navy, made a diplomatic move by letting Paulet occupy Hawaii for the time being. Once word of this was sent back to Britain, they recognized this unlawful act. Britain sent Admiral Richard Thomas to reverse what Paulet had done and restore the Hawaiian Kingdom back to King Kamehameha III. King Kamehameha III declared the day of restoration a holiday, and it is one that many Hawaiians find great joy and pride in.',
+				"This day, this history is an example of Hawaiian political actions that were never taught to us in public school. We all knew what the day was but we were never truly taught the history behind it, and that is exactly how the American Empire likes to keep it. They like us think that we are a bunch of people who rolled over whenever European countries tried to bully us, they like us believe that when the overthrow happened, we just wen give up. Fuck that. Stories like Lā Ho’i Ho’i Ea or the Kū’ē petitions are meant to be kept from us so that we don't realize that we Hawaiians are fucking fighters. We aren't no servile group who let colonization happen to us without a fight. The Hawaiians were politically savvy, on some realpolitik kine stuff. We recognized our political state and knew that the only way to survive was to be internationalists. We sent choke diplomats to Europe and across the world to secure recognition of our independence. We established relationships with our fellow Pacific nations. We studied the Empires of the day and tried to mimic them so that we could try and secure our own independence. People love to think that when colonization happened, we were just some people living in huts and then got colonized. The Hawaiians saw the writing on the wall, they saw all our cousins in the Pacific get overthrown, and they tried everything in their power to make sure that wouldn't happen to us. Unfortunately, Capitalism and Imperialism is a machine of death and decay that won't stop until every last one of us is either a slave or dead.",
+				"I write this to you readers as a Hawaiian who never really knew his culture and history until recently. I was taught that nothing we did mattered and that all we can do is spit on the haoles, which I don't disagree with, but now I know that there are things we can do. We can take up the fight where our Kūpuna left off. We can destroy the American Empire and establish a real, sovereign, and socialist Hawai’i."
+			],
+			author: 'JR Kaho’okano '
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5:30 pm @', 'Thomas Square'],
+
+				title: ['Food Not Bombs [FNB]', 'Potluck, Mutual Aid, Community Meeting']
+			},
+
+			{
+				when: ['Sunday, July 27', '9am-6pm @', 'Thomas Square'],
+
+				title: ['Lā Hoʻi Hoʻi Ea']
+			},
+
+			{
+				when: ['Saturday, August 2', '2 pm @', 'Kaimuki Library'],
+
+				title: ['Imperialism in China and Hawaiʻi Teach-in']
+			},
+
+			{
+				when: ['Sunday, August 3', '3 pm @', 'Makiki District Park'],
+
+				title: ['HOTU Potluck']
+			}
+		]
+	},
+	{
 		number: 6,
 		date: new Date('2025-07-11T12:00:00'),
 		newsItems: [
@@ -46,8 +120,8 @@ export const issues: RedStarIssue[] = [
 			paragraphs: [
 				"While I could write another piece about how American imperialism victimizes Hawaiʻi, at a certain point I am merely preaching to the choir. Most readers already understand the negative consequences of our economy's reliance on tourism, the military, and real estate on the land and people of Hawaiʻi. Even the common apolitical resident can recognize these harms. They watched as the Aloha Stadium parking lot filled to the brim with unused rental cars during the COVID shutdown. They feared for the health and safety of themselves and their children when Red Hill's jet fuel leaked into the water supply. They complain about soaring housing and rental costs and the worsening homelessness crisis. They see the chains that bind them, they may even recognize the systemic roots of these problems, yet few call for Hawaiian independence. So why is it that the vast majority cling to a system that endangers their safety and cripples them economically? I posit the reason is a lack of a clear alternative.",
 				"As exploitative as American capitalism is to Hawaiʻi, it remains the system that feeds us and clothes us. In 2023, Hawaii received $11 billion more from the federal government than we paid to it, or nearly $7,000 per capita. Tourism, military and real estate, along with their various support industries sign the paycheck of a massive portion of the population. While sovereignty activists rightfully criticize the faults of this exploitative system, the masses who rely on it for survival are understandably skeptical about uprooting the system that puts food on their plates. So they merely complain, perhaps participate in a protest or two. However, most won't join a movement based on the fundamental idea of upsetting the status quo. If we wish to organize them, it is imperative to offer them a vision of how an independent Hawaiʻi would politically and economically benefit them.",
-				"Discontent is a mighty hammer, yet left unguided it swings wildly in the dark. By failing to provide a clear path forward, we risk letting reactionaries harness this anger. This is how fascism is perpetuated: reactionaries take advantage of anger at a broken system and a powerless left opposition to create simple answers that appeal to the worst forms of bigotry to gain power. Without a defined ideology and alternative to the status quo, we cannot save our discontent neighbors from fascist thought, or expect to create a sustainable movement.",
-				"So how do we create a vision for the future and develop an ideology? The answer is simple, we must share our thoughts, debate them, refine them, and allow them to evolve as we gain more perspectives. We cannot stay within our bubble, instead engage with the community and refine our theories by testing them in the real world. Through this process we can reimagine a future that will provide tangible political, economic, and cultural benefits. We cannot expect to theorize the perfect system for managing an independent Hawaiʻi, but we need to ease the doubts of the many who are sympathetic to our cause yet fearful of what they have to lose by uprooting the status quo. We must acknowledge their legitimate concerns and provide them a reason to want a revolution."
+				'Discontent is a mighty hammer, yet left unguided it swings wildly in the dark. By failing to provide a clear path forward, we risk letting reactionaries harness this anger. This is how fascism is perpetuated: reactionaries take advantage of anger at a broken system and a powerless left opposition to create simple answers that appeal to the worst forms of bigotry to gain power. Without a defined ideology and alternative to the status quo, we cannot save our discontent neighbors from fascist thought, or expect to create a sustainable movement.',
+				'So how do we create a vision for the future and develop an ideology? The answer is simple, we must share our thoughts, debate them, refine them, and allow them to evolve as we gain more perspectives. We cannot stay within our bubble, instead engage with the community and refine our theories by testing them in the real world. Through this process we can reimagine a future that will provide tangible political, economic, and cultural benefits. We cannot expect to theorize the perfect system for managing an independent Hawaiʻi, but we need to ease the doubts of the many who are sympathetic to our cause yet fearful of what they have to lose by uprooting the status quo. We must acknowledge their legitimate concerns and provide them a reason to want a revolution.'
 			],
 			author: 'Jimmy Aoki'
 		},
