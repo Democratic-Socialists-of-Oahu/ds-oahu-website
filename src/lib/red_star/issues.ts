@@ -133,7 +133,7 @@ export const issues: RedStarIssue[] = [
 			},
 
 			{
-				when: ['Saturday, July 13', '3pm'],
+				when: ['TBA'],
 
 				title: ['DSO General Membership Meeting']
 			},
