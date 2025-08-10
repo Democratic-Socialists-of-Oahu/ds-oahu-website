@@ -2,6 +2,88 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 8,
+		date: new Date('2025-08-08T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://www.kitv.com/news/queens-medical-center-nurses-claim-hospital-broke-promises/article_4d931cb4-7e51-4d20-b6e3-3ebd58fe4422.html',
+				content:
+					"Barely 6 months after signing a new contract, Hawaii Nurses' Association has filed 20 grievances over staffing ratios at Queen's Medical Center. Queens has until Aug 21 before the union files bad-faith bargaining charges with the National Labor Relations Board.",
+				source: 'KITV'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/25/concrete-workers-strike-over-7-day-work-week/',
+				content:
+					'Members of Hawaii Teamsters Union are striking against Island Ready-Mix Concrete for a 5-day work week after the company was forcing drivers to work up to 7 days without overtime pay.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/29/this-is-enough-union-workers-go-strike-against-airgas/',
+				content:
+					'Other members of Hawaii Teamsters Union are joining a national strike against Airgas over unfair labor practices and disappointing contract offers. Employees allege disrespect and treatment as second-class citizens.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/08/02/uss-carl-vinson-honolulu-port-visit-after-major-mission-middle-east/',
+				content:
+					'Oʻahu is being used as a rest stop between the Arabian Sea and the United States for the USS Carl Vinson aircraft carrier and 4,500 military personnel. The Vinson engaged in the Operation Rough Rider attacks in Yemen to enable the ongoing genocide in Palestine. No date of departure is given.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/07/23/mark-zuckerbergs-expansive-kauai-compound-has-some-worried-over-iwi-kupuna/',
+				content:
+					"Mark Zuckerberg's Kauaʻi compound expanded to more than 2,000 acres earlier this year. Those with iwi kūpuna on the property are not able to visit them freely, and are concerned that additional discoveries are not being transparently reported.",
+				source: 'Civil Beat'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/07/judge-stops-trial-in-police-shooting-lawsuit-before-it-goes-to-jury/',
+				content:
+					"A Honolulu judge dismissed a lawsuit filed by Lindani Myeni's widow against HDP for wrongful death, preventing the case from being heard by a jury. Police shined high intensity lights in Myeni's face and failed to identify themselves, causing an altercation where Myeni was shot and killed.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://english.news.cn/asiapacific/20250720/3229f1e9d8c14564aac9fe09a435fa33/c.html',
+				content:
+					"Japan's defense ministry distributed a children's version of a military defense report to 2,400 elementary schools, which portrays its neighbors as military threats and emphasizes the need for “deterrence”. Many fear that this is inappropriate for children and stokes xenophobia.",
+				source: 'Xinhua'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				'On July 30, I was working my regular shift at a grocery store with the added element of impending natural disaster. The store is north enough that we were out of the evacuation zone. One moment, my coworker from Mākaha was finishing her shift after the first alarms. Next, I was in charge of 20+ people using the self check-out while two lines of 30+ customers waited. Most were buying essentials, but other customers sent me on errands to collect liquor out of the cabinet and get cigarettes. I operated with mounting panic and a sense of responsibility for the people there. I asked management if we were going to close. When they said no, I thought of the cut hours, low budget, and decreased sales in the past few months. My heart crumpled a little as I tried to imagine having to do my other duties after the crisis. One thing was clear– the tsunami was good for business.',
+				"After a mandated break spent texting friends and family and as we got closer to the first waves, there were fewer people anxiously buying. Haoles and regular customers alike casually asked how my night was going. Tourists had evacuated to the nearby park and shopping center, and our single-stall bathroom had a winding line. Meanwhile, I answered twenty identical phone calls asking if we were staying open. All I wanted was to go home. During the rush, I hadn't really been upset by any of the grating interactions commonplace to high-stress situations and customer service work. In the aftermath, people's nonchalance confused and hurt me.",
+				"The next day was back to business. I heard about the time people spent trying to get home. Some abandoned their cars and started walking. Traffic was made worse by tourists trying to leave Waikīkī instead of sheltering in their hotels as advised and cruise ship guests who were transported by shuttle to shelters. If there were shuttles ready to take residents rather than tourists to safety, much of the traffic jam could have been avoided. Additionally, most were told to leave work once the tsunami warning was issued no matter where they lived, but many service workers were not allowed to leave or were released long after the first warnings. Service workers, who are often treated the worst and paid the least, are expected to work through natural disasters for profit. Worse was later learning that those who did stay in hotels were cheering when the waves were supposed to arrive, while complaining that food service was suspended because hotel workers were allowed to leave. They don't see service workers as people, they only see their missed dinner and ruined vacation.",
+				'It feels like an incredible miracle that people were safe, especially in the age of the climate crisis that disproportionately affects marginalized populations. I would gladly serve my community like this again, but am struggling in the aftermath. We must recognize that the capitalist, tourist economy prioritizes haole during emergencies and expects residents to make sacrifices for their comfort. I would gladly serve my community in a moment like this again, but am struggling in an aftermath that neglects the emergencies we have faced and that are to come.'
+			],
+			author: 'Anonymous'
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5:30 pm @', 'Thomas Square'],
+
+				title: ['Food Not Bombs [FNB]', 'Potluck, Mutual Aid, Community Meeting']
+			},
+
+			{
+				when: ['Saturday, August 9', '1 pm @', 'Old Stadium Park'],
+
+				title: ["Honolulu Tenants' Union [HoTU] Makiki Local Meeting/Potluck"]
+			},
+
+			{
+				when: ['Sunday, August 17', '3 pm'],
+
+				title: ['Democratic Socialists of Oʻahu [DSO] Meeting']
+			},
+
+			{
+				when: ['Sunday, August 31', 'TBA'],
+
+				title: ['DSO Teach-In:', 'Contemporary Hawaiʻi']
+			}
+		]
+	},
+	{
 		number: 7,
 		date: new Date('2025-07-25T12:00:00'),
 		newsItems: [
@@ -47,7 +129,7 @@ export const issues: RedStarIssue[] = [
 				"This day, this history is an example of Hawaiian political actions that were never taught to us in public school. We all knew what the day was but we were never truly taught the history behind it, and that is exactly how the American Empire likes to keep it. They like us think that we are a bunch of people who rolled over whenever European countries tried to bully us, they like us believe that when the overthrow happened, we just wen give up. Fuck that. Stories like Lā Ho’i Ho’i Ea or the Kū’ē petitions are meant to be kept from us so that we don't realize that we Hawaiians are fucking fighters. We aren't no servile group who let colonization happen to us without a fight. The Hawaiians were politically savvy, on some realpolitik kine stuff. We recognized our political state and knew that the only way to survive was to be internationalists. We sent choke diplomats to Europe and across the world to secure recognition of our independence. We established relationships with our fellow Pacific nations. We studied the Empires of the day and tried to mimic them so that we could try and secure our own independence. People love to think that when colonization happened, we were just some people living in huts and then got colonized. The Hawaiians saw the writing on the wall, they saw all our cousins in the Pacific get overthrown, and they tried everything in their power to make sure that wouldn't happen to us. Unfortunately, Capitalism and Imperialism is a machine of death and decay that won't stop until every last one of us is either a slave or dead.",
 				"I write this to you readers as a Hawaiian who never really knew his culture and history until recently. I was taught that nothing we did mattered and that all we can do is spit on the haoles, which I don't disagree with, but now I know that there are things we can do. We can take up the fight where our Kūpuna left off. We can destroy the American Empire and establish a real, sovereign, and socialist Hawai’i."
 			],
-			author: 'JR Kaho’okano '
+			author: 'JR Kaho’okano'
 		},
 		events: [
 			{
