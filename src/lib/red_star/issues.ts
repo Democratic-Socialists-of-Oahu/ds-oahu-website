@@ -2,6 +2,88 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 9,
+		date: new Date('2025-08-22T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/08/17/hawaii-island-nurses-ratify-new-contract-avoiding-3-day-strike/',
+				content:
+					"Nurses and Queen's North Hawaiʻi Community Hospital have avoided a strike and reached a tentative agreement for a three-year contract.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/08/16/hundreds-kaiser-permanente-workers-rally-contract-agreements-near-expiration-nationwide/',
+				content:
+					"1,900 Oʻahu Kaiser Permanente worker's contracts are set to expire. Workers want equal pay to those on the US continent, as well as job security against AI. Local 5 plans to hold a strike vote next month.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/08/05/newly-released-demand-letter-former-police-chief-seeks-784k-citing-retaliation-emotional-distress/',
+				content:
+					'Former Honolulu Police Chief Joe Logan is suing the city for $784,240 for whistleblower retaliation. Logan claims that Mayor Blangiardi threatened Logan and his family for refusing to carry out unconstitutional homeless sweeps.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.hawaiipublicradio.org/local-news/2025-08-15/turtle-bay-development-moving-ahead-with-construction',
+				content:
+					'Utah-based developer Areté Collective is beginning construction on new resort homes in Turtle Bay despite opposition from the North Shore community. The developer bought 65 acres of land from Blackstone for $43 million.',
+				source: 'Hawaii Public Radio'
+			},
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/08/14/family-identifies-man-killed-navy-property-wahiawa/',
+				content:
+					"23-year-old Devaughn Pita was murdered by an army soldier at Wahiawa Annex. Pita's ex-girlfriend asked for help moving her and their 4-year-old son to escape her abusive army husband. He was trying to protect her from being beaten when he was shot. A link to the GoFundMe page for Pita's funeral can be found in the article.",
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://earthjustice.org/press/2025/interior-advances-trump-executive-order-on-deep-seabed-mining',
+				content:
+					'Deep Sea Mining for valuable materials was proposed off the coast of American Sāmoa. American imperialists violate the safety and stability of the ecosystems of their colonies.',
+				source: 'Earthjustice'
+			},
+			{
+				href: 'https://www.aljazeera.com/news/2025/8/10/al-jazeera-journalist-anas-al-sharif-killed-in-israeli-attack-in-gaza-city',
+				content:
+					"The zionist entity has killed four Al Jazeera journalists in Gaza on Sunday Aug 10th in a housing tent outside of Gaza City's al-Shifa Hospital in the latest of targeted attacks against press covering the genocide. Israel has killed over 200 journalists since October 7th.",
+				source: 'Al Jazeera'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				'There is a beautiful diversity in the localness of Oʻahu. The Mākaha local, the Waimānalo local, the Pearl City and Kalihi and Kāneʻohe and sure, even the townies.',
+				'What high school you went?',
+				"But haven't you noticed lately it seems like everyone wants the same… stuff? The same stuff that looks local, that SCREAMS local. Businesses are profiting off the clout of the Hawaiʻi local, and residents are buying in. Lucky we live Hawaiʻi? This capitalist, occupied Hawaiʻi? Who's WE?",
+				"I get it. Buy the forever car lei so the 45 minutes in 7am traffic sucks less. Buy new plastic flowers again and again because plastic pakalana is popular now and plastic puakenikeni is so last month and there's a new plastic color out. While you're at it, buy a plastic lei for your trucker hat. for your lanyard. for your purse. for the labubu on your purse.",
+				"At least the shell necklace is real. Where did the shells come from? Maybe they were gathered responsibly by hand. Or maybe they were scraped off the ocean floor, live or dead, and the reef got a little fucked up in the process. Maybe your favorite brand knows, maybe they don't. Maybe they care, maybe they don't. They have to keep up with all the demand somehow.",
+				"Buy the palaka shirt so you can at least look nice when you're crashing out 9 hours into your 8-4. Buy the matching bag because the dopamine hit distracts you from the fact your landlord is raising rent again. And after work buy the gentrified lemon peel li hing peach rings for triple the price and half the peach rings from Walmart, instead of the neighborhood crack seed stores, wherever those went.",
+				"On the weekend, wait 3 hours in line to buy local at the festival, where local-like brands hired local braddahs to sell you stuff made in the third world and repackaged by someone local-like in Kailua, because then it feels a little more local and YOU'RE a little more local too. You spent money on all this local stuff that every local also wants. It's an exclusive local pattern only available for this local weekend. Is it FOMO for culture or FOMO for capitalism?",
+				"At the end of the day, buy what you like and post a $800 haul vlog too. But don't put on the uniform of a local and say you “grew up in the culture” if you never show up to one ʻāina day, never show up to a food distribution, never fight for Hawaiian independence (Instagram stories don't count). What's the difference between a settler mimicking pidgin and a townie in a Fighting Eel dressing room? There's obviously power in the national identity of Hawaiʻi because people want to look like it so fucking bad, but “local” isn't in what you wear or what you have, and it has never been in enriching a business owner. You cannot buy locality clout; you cannot purchase praxis.",
+				"The hemorrhagic contradictions of capitalism cannot be band-aided by a little extra capitalism as a treat. One day we won't need any of these things to live full, enriching lives because we WILL be lucky to live in an independent and socialist Hawaiʻi. But we can't just buy in, we need to work for it.",
+				'What high school you went again?'
+			],
+			author: '1/2 lb of tako limu poke'
+		},
+		events: [
+			{
+				when: ['Every Day', 'All Day @ Oʻahu Airgas Locations'],
+
+				title: ['Teamsters Picket requesting support']
+			},
+
+			{
+				when: ['Saturday, August 23', '6:30 pm by sign-up'],
+
+				title: ['Democratic Socialists of Oʻahu [DSO] Book Club']
+			},
+
+			{
+				when: ['Sunday, August 31', '1 pm @ Kaimukī Public Library'],
+
+				title: ['DSO Teach-In:', 'Contemporary History (2020-present) of Hawaiʻi']
+			}
+		]
+	},
+	{
 		number: 8,
 		date: new Date('2025-08-08T12:00:00'),
 		newsItems: [
@@ -127,11 +209,11 @@ export const issues: RedStarIssue[] = [
 		],
 		editorial: {
 			paragraphs: [
-				'Howzit, readers and non-readers. As I am writing this, it is two days before the 183th Lā Ho’i Ho’i Ea, so I thought it would be a good idea to write about that. To anyone unfamiliar, Lā Ho’i Ho’i Ea is Hawaiian Sovereignty Restoration Day, the real one, none of that July 4th bullshit. In 1882, British businessman Richard Charlton tried to claim Hawaiian lands. He did this by complaining to Captain George Paulet that he was being taken advantage of. This caused George Paulet to write a letter to King Kamehameha III saying that he demanded an audience with the king. After the two disagreed, Paulet threatened to launch a military attack on sovereign Hawaiian lands. Kamehameha III, knowing the strength of the British navy, made a diplomatic move by letting Paulet occupy Hawaii for the time being. Once word of this was sent back to Britain, they recognized this unlawful act. Britain sent Admiral Richard Thomas to reverse what Paulet had done and restore the Hawaiian Kingdom back to King Kamehameha III. King Kamehameha III declared the day of restoration a holiday, and it is one that many Hawaiians find great joy and pride in.',
-				"This day, this history is an example of Hawaiian political actions that were never taught to us in public school. We all knew what the day was but we were never truly taught the history behind it, and that is exactly how the American Empire likes to keep it. They like us think that we are a bunch of people who rolled over whenever European countries tried to bully us, they like us believe that when the overthrow happened, we just wen give up. Fuck that. Stories like Lā Ho’i Ho’i Ea or the Kū’ē petitions are meant to be kept from us so that we don't realize that we Hawaiians are fucking fighters. We aren't no servile group who let colonization happen to us without a fight. The Hawaiians were politically savvy, on some realpolitik kine stuff. We recognized our political state and knew that the only way to survive was to be internationalists. We sent choke diplomats to Europe and across the world to secure recognition of our independence. We established relationships with our fellow Pacific nations. We studied the Empires of the day and tried to mimic them so that we could try and secure our own independence. People love to think that when colonization happened, we were just some people living in huts and then got colonized. The Hawaiians saw the writing on the wall, they saw all our cousins in the Pacific get overthrown, and they tried everything in their power to make sure that wouldn't happen to us. Unfortunately, Capitalism and Imperialism is a machine of death and decay that won't stop until every last one of us is either a slave or dead.",
-				"I write this to you readers as a Hawaiian who never really knew his culture and history until recently. I was taught that nothing we did mattered and that all we can do is spit on the haoles, which I don't disagree with, but now I know that there are things we can do. We can take up the fight where our Kūpuna left off. We can destroy the American Empire and establish a real, sovereign, and socialist Hawai’i."
+				'Howzit, readers and non-readers. As I am writing this, it is two days before the 183th Lā Hoʻi Hoʻi Ea, so I thought it would be a good idea to write about that. To anyone unfamiliar, Lā Hoʻi Hoʻi Ea is Hawaiian Sovereignty Restoration Day, the real one, none of that July 4th bullshit. In 1882, British businessman Richard Charlton tried to claim Hawaiian lands. He did this by complaining to Captain George Paulet that he was being taken advantage of. This caused George Paulet to write a letter to King Kamehameha III saying that he demanded an audience with the king. After the two disagreed, Paulet threatened to launch a military attack on sovereign Hawaiian lands. Kamehameha III, knowing the strength of the British navy, made a diplomatic move by letting Paulet occupy Hawaii for the time being. Once word of this was sent back to Britain, they recognized this unlawful act. Britain sent Admiral Richard Thomas to reverse what Paulet had done and restore the Hawaiian Kingdom back to King Kamehameha III. King Kamehameha III declared the day of restoration a holiday, and it is one that many Hawaiians find great joy and pride in.',
+				"This day, this history is an example of Hawaiian political actions that were never taught to us in public school. We all knew what the day was but we were never truly taught the history behind it, and that is exactly how the American Empire likes to keep it. They like us think that we are a bunch of people who rolled over whenever European countries tried to bully us, they like us believe that when the overthrow happened, we just wen give up. Fuck that. Stories like Lā Hoʻi Hoʻi Ea or the Kūʻē petitions are meant to be kept from us so that we don't realize that we Hawaiians are fucking fighters. We aren't no servile group who let colonization happen to us without a fight. The Hawaiians were politically savvy, on some realpolitik kine stuff. We recognized our political state and knew that the only way to survive was to be internationalists. We sent choke diplomats to Europe and across the world to secure recognition of our independence. We established relationships with our fellow Pacific nations. We studied the Empires of the day and tried to mimic them so that we could try and secure our own independence. People love to think that when colonization happened, we were just some people living in huts and then got colonized. The Hawaiians saw the writing on the wall, they saw all our cousins in the Pacific get overthrown, and they tried everything in their power to make sure that wouldn't happen to us. Unfortunately, Capitalism and Imperialism is a machine of death and decay that won't stop until every last one of us is either a slave or dead.",
+				"I write this to you readers as a Hawaiian who never really knew his culture and history until recently. I was taught that nothing we did mattered and that all we can do is spit on the haoles, which I don't disagree with, but now I know that there are things we can do. We can take up the fight where our Kūpuna left off. We can destroy the American Empire and establish a real, sovereign, and socialist Hawaiʻi."
 			],
-			author: 'JR Kaho’okano'
+			author: 'JR Kahoʻokano'
 		},
 		events: [
 			{
@@ -172,7 +254,7 @@ export const issues: RedStarIssue[] = [
 			{
 				href: 'https://www.civilbeat.org/2025/06/hawai%CA%BBi-senator-didnt-disclose-possible-conflict-of-interest-before-voting/',
 				content:
-					'Senator Donovan Dela Cruz, owner of Kilani Brew, failed to declare a conflict of interest when voting for a bill to protect māmaki tea. Other senators were reluctant to speak up due to Dela Cruz’s power over legislation and appropriations as the head of the Ways and Means Committee. Throughout the 2025 legislative season, no senators have declared a conflict of interest.',
+					"Senator Donovan Dela Cruz, owner of Kilani Brew, failed to declare a conflict of interest when voting for a bill to protect māmaki tea. Other senators were reluctant to speak up due to Dela Cruz's power over legislation and appropriations as the head of the Ways and Means Committee. Throughout the 2025 legislative season, no senators have declared a conflict of interest.",
 				source: 'Civil Beat'
 			},
 			{
@@ -336,7 +418,7 @@ export const issues: RedStarIssue[] = [
 			{
 				href: 'https://www.hawaiinewsnow.com/2025/06/07/report-reveals-hawaii-beaches-among-most-polluted-nationwide/',
 				content:
-					"A report shows that many of Hawaiʻi’s beaches and streams fail to pass water quality tests . The Department of Health's programs to monitor water quality and address pollution are in jeopardy as it is funded in part by the Environmental Protection Agency, which faces budget cuts.",
+					"A report shows that many of Hawaiʻi's beaches and streams fail to pass water quality tests . The Department of Health's programs to monitor water quality and address pollution are in jeopardy as it is funded in part by the Environmental Protection Agency, which faces budget cuts.",
 				source: 'Hawaii News Now'
 			},
 			{
@@ -519,7 +601,7 @@ export const issues: RedStarIssue[] = [
 		editorial: {
 			paragraphs: [
 				"On Friday May 9th, Hawaiian activists and community organizations pressured the Board of Land and Natural Resources to reject the final environmental impact statement (FEIS) for the Pōhakuloa training area which, at over 100,000 acres, is the biggest US Department of Defense installation in the Pacific. At the meeting, the military claimed that they needed to retain that land for the “security of the Pacific”. What we need to do is read between the lines and ask the question, “Security for whom?” Is it the security of the land they are bombarding? Is it the security of the wildlife that they disrupt with the constant noise of explosions and gunfire? Is it the security of the people of Hawaiʻi, as contaminants seep into the land we grow food from and into the water we drink? The American military claims to mitigate their environmental impact with other programs or deal with the consequences later, but we've already seen how they resisted any accountability after jet fuel leaked into our drinking water at Red Hill. We need to recognize that the land that the military controls is not for the security of Hawaiʻi, but for the security of the American empire. Their recent actions only reinforce this notion.",
-				"You may have heard the phrase “pivot to Asia” in the news. This means that the American empire wants to develop its military presence in Asia and the Pacific to intimidate China, which has developed at an incredible pace in the last century and started to threaten the US's global hegemony. China's rise threatens Western capital by providing an alternative to American imperialism through its diplomatic efforts, investments in the developing world, and strong economy independent of Western oligarchs. This contextualizes the recent actions the Trump administration has taken in international politics. Trump threatening to pull out of NATO in combination with fear mongering by the media puts pressure on European countries to spend more on their military to counter Russia. When the Signal chat with top military officials was leaked, the important part wasn't the security breach. It was the intent to scale back military aid to countries in West Asia and, in turn, the encouragement for US aligned countries to step up their military spending to counter Iran and Yemen. This allows the American military to shift their spending to Asia and the Pacific, all while offering a generous tax cut for the wealthy. The American empire’s escalation of global tensions in the pursuit of economic dominance offers up millions of civilians around the world as collateral damage in the war they risk provoking. We cannot let ourselves be tricked into thinking that the Trump administration is irrational, but instead recognize that their actions purposely serve American capital at our expense.",
+				"You may have heard the phrase “pivot to Asia” in the news. This means that the American empire wants to develop its military presence in Asia and the Pacific to intimidate China, which has developed at an incredible pace in the last century and started to threaten the US's global hegemony. China's rise threatens Western capital by providing an alternative to American imperialism through its diplomatic efforts, investments in the developing world, and strong economy independent of Western oligarchs. This contextualizes the recent actions the Trump administration has taken in international politics. Trump threatening to pull out of NATO in combination with fear mongering by the media puts pressure on European countries to spend more on their military to counter Russia. When the Signal chat with top military officials was leaked, the important part wasn't the security breach. It was the intent to scale back military aid to countries in West Asia and, in turn, the encouragement for US aligned countries to step up their military spending to counter Iran and Yemen. This allows the American military to shift their spending to Asia and the Pacific, all while offering a generous tax cut for the wealthy. The American empire's escalation of global tensions in the pursuit of economic dominance offers up millions of civilians around the world as collateral damage in the war they risk provoking. We cannot let ourselves be tricked into thinking that the Trump administration is irrational, but instead recognize that their actions purposely serve American capital at our expense.",
 				'We therefore have a duty to reclaim land from the military not only for our safety, but for the safety of the whole of the Pacific. If the people of Hawaiʻi win back land for our own use, the US empire loses a key refueling station, training area, and site of military power projection. We can slow the militarization in the entirety of East Asia and the Pacific and fight back against American private investor capitalists and their dangerous new cold war. The leases for Pōhakuloa, Mākua and other sites will be up for renewal in 2029 and blocking the FEIS is only the first step in blocking the renewal entirely. We have less than 3 years, so there is no better time to get organized and involved in the struggle than now.'
 			],
 			author: 'Comrade Em'
