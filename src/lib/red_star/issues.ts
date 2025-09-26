@@ -2,6 +2,86 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 10,
+		date: new Date('2025-09-19T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://sierraclubhawaii.org/blog/hawaii-supreme-court-vindicates-water-advocates-rights-upholds-due-process',
+				content:
+					"The States' High Court has ruled in favor of Water Rights activists on Maui against the BLNR's legal misproceedings. The BLNR enables Alexander & Baldwin: a mainstay of the Big 5 Oligarchy which overthrew the Hawaiian Kingdom, to mismanage water upstream of Kānaka ʻŌiwi farmers and working people.",
+				source: 'Sierra Club'
+			},
+			{
+				href: 'https://www.hawaii.edu/news/2025/09/10/president-hensel-significant-changes-to-federal-funding/',
+				content:
+					'The US Dept of Education declared that it will be eliminating funding for programs that support education for Native Hawaiians, Pacific Islanders, and Asian Americans. This is expected to cause a loss of $350 million in funding for UH, preventing the emergence of professionals desiring to serve their people.',
+				source: 'UH News'
+			},
+			{
+				href: 'https://peoplesdispatch.org/2025/09/11/five-theses-on-the-situation-in-nepal/',
+				content:
+					'Massive youth-led protests in Nepal have ousted former Prime Minister and installed a new one. This article provides an analysis on the issues which prompted this (largely popular disappointment in growth and economic condition, catalyzed by a Social Media ban), and provides insight on the failures of mass mobilization without organization.',
+				source: "People's Dispatch"
+			},
+			{
+				href: 'https://www.hawaiitribune-herald.com/2025/09/15/hawaii-news/kamehameha-schools-prepares-to-defend-admissions-policy-again/',
+				content:
+					'A Virginia-based right wing activist group is preparing to sue Kamehameha Schools for its Hawaiian preference admissions policy. The group has successfully challenged and struck down Harvard’s affirmative action policy.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://www.thenorthstar.com/p/the-largest-kidnapping-in-west-bank',
+				content:
+					'While the Israel Defense Forces continues their bloody and total genocide in Gaza, starting on September 11th, they have begun the largest mass abduction of innocent Palestinian men and boys. These people are being marched out of their homes, an image reeking of systematic ethnic cleansing.',
+				source: 'North Star'
+			},
+			{
+				href: 'https://www.civilbeat.org/2025/09/hpd-tried-to-fire-this-cop-hes-retiring-with-a-giant-pension-instead/',
+				content:
+					'Retired HPD officer Darren Cachola has retired after a career filled with accusations of violence against women and a lawsuit over arresting sober drivers at DUI checkpoints. He worked over 2,300 hours of overtime in his last year resulting in an annual pension of $200,000.',
+				source: 'Civil Beat'
+			}
+		],
+		editorial: {
+			paragraphs: [
+				`“Cuts”, “Attacks”, “Restrictions”; any word will do to describe how our education system has been screwed and its accessibility strangled since Trump took office. The ability to pursue higher education in any capacity: university, continuation school, even Job Corps— is facing the threat of financial destruction, signaling the decline of education in the U.S. With fewer means to pursue “skilled” labor, people who can't afford university out-of-pocket are corralled into the work force, else they fall into debt. A government that has debt so grand there's a clock dedicated to its infinite rise is not in the business of sparing citizens from financial ruin. Recently, education is seen as worthless unless it sustains capital— otherwise only the cost is left to show for all that intellectual work.`,
+				`The recent and most prominent changes to education accessibility are the “Big Beautiful Bill” and Executive Order 14173. Your demographic and class are scrutinized until some reason is found for you to not deserve anything for education, and if a university or program tries to help? Their funding will be slashed. PBS has a collection of stories that detail how the cuts to education have already affected us, and how aid will be distributed in the foreseeable future. The federal Pell Grant and work study are projected to change their criteria, and in the case of work study, have less positions. The usual 12 credits won't qualify for full-time student aid; the new proposed minimum is 15 credits (keep in mind many universities alter tuition cost based on amount of credits taken). As a student, this change will absolutely have negative consequences. I average 15 credits and know people that consistently take 18 – there's a reason most people don't take on that much. Education isn't confined to the hours spent in class and is supposed to be a student's primary concern. Despite this, many students work in addition to their education. If you know anyone who takes on that double life, burnout is common and will become more frequent without student aid. Changes to student life: taking on more classes, more work, more internships, with less aid, less housing, less funding– are destroying what makes an education fulfilling.`,
+				`Pairing the knowledge that the average person's debt is the same money used to project what the federal bank should have, with federal financial aid for higher education being cut, leads us to the conclusion that more students will seek out unconventional methods to pay for university. The most common method is “enlist yourself.” We can see who America is attempting to shove into the meat-grinder that is the military industrial complex; the poor, Black, Indigenous, and uneducated. Enlisting is not some insignificant act, it's a subordination to the American empire that contributes to every horror it is capable of no matter what kind of job is taken under it. University is one of the few environments where people can grow their minds and interact with people outside of work and home, it is a pillar of society that cannot be restricted. Even with the “Big Beautiful Bill” that cannot stop the people from educating themselves within their community, and avoiding a blood stained path to achieve that.`
+			],
+			author: 'R'
+		},
+		events: [
+			{
+				when: ['Every Sunday', '5pm @ Thomas Square'],
+				title: ['Food Not Bombs Potluck, Mutual Aid, Community Meeting']
+			},
+			{
+				when: ['Wednesday, Sept 24', '5pm'],
+				title: ['Democratic Socialists of Oʻahu Welcome Call', 'Register at dsoahu.org']
+			},
+			{
+				when: ['Saturday, Sept 27', '9:30am @ Puʻuhonua o Waimanālo'],
+				title: ['Aloha ʻĀina Workday', 'Register at bit.ly/48w8cSp']
+			},
+			{
+				when: ['Saturday, Sept 27', '3pm @ Stadium Park'],
+				title: ['Corruption in Modern Hawai‘i Teach In + Potluck']
+			},
+			{
+				when: ['Sunday, Sept 28', '1pm @ Makiki Park'],
+				title: ['Makiki Local Potluck & Meeting with Honolulu Tenants Union']
+			},
+			{
+				when: ['Saturday, Oct 4', '3pm @ Stadium Park'],
+				title: ['Strikes and Labor Disputes in Modern Hawai‘i', 'Interactive Teach In + Potluck']
+			},
+			{
+				when: ['Saturday, Oct 11', '3pm @ Stadium Park'],
+				title: ['Military Issues and Leases in Modern Hawai‘i', 'Interactive Teach In + Potluck']
+			}
+		]
+	},
+	{
 		number: 9,
 		date: new Date('2025-08-22T12:00:00'),
 		newsItems: [
