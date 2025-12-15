@@ -5,6 +5,7 @@
 
 	import Card from '$lib/Card.svelte';
 	import NavBarDropDown from '$lib/NavBarDropDown.svelte';
+	import rsaImage from '$lib/assets/rsa_bg_l.png';
 
 	const months = [
 		'January',
@@ -35,22 +36,29 @@
 </script>
 
 <div class="flex">
-    <div class="content-center size-24 mb-4 mr-2 border border-4 bg-white">
-        <p class="text-xs">issue</p>
-        <p>{data.number}</p>
-        <p class="text-xs">{months[data.date.getMonth()].slice(0, 3)}. {data.date.getDate()} '{data.date.getFullYear().toString().slice(2)}</p>
-    </div>
-    <div class="mb-4 flex w-full items-center content-center justify-center justify-self-center bg-[#f9f3c6] py-2">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="red"
-            viewBox="0 0 260 245"
-            class="mr-1 h-14 md:mr-2 md:h-16"
-        >
-            <path d="m56,237 74-228 74,228L10,96h240" />
-        </svg>
-        <div class="content-center font-serif text-3xl italic md:text-4xl">The Red Star Advertiser</div>
-    </div>
+	<div class="mr-2 mb-4 size-24 content-center border border-4 bg-white">
+		<p class="text-xs">issue</p>
+		<p>{data.number}</p>
+		<p class="text-xs">
+			{months[data.date.getMonth()].slice(0, 3)}. {data.date.getDate()} '{data.date
+				.getFullYear()
+				.toString()
+				.slice(2)}
+		</p>
+	</div>
+	<div
+		class="mb-4 flex w-full content-center items-center justify-center justify-self-center bg-[#f9f3c6] py-2"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="red"
+			viewBox="0 0 260 245"
+			class="mr-1 h-14 md:mr-2 md:h-16"
+		>
+			<path d="m56,237 74-228 74,228L10,96h240" />
+		</svg>
+		<div class="content-center font-serif text-3xl italic md:text-4xl">The Red Star Advertiser</div>
+	</div>
 </div>
 
 {#if data.newsItems}
@@ -59,54 +67,62 @@
 	<div
 		class="
             grid
-            md:hidden
-            grid-cols-1
-            items-center
-            justify-items-center
-            content-center
             border-collapse
             border-spacing-4
+            grid-cols-1
+            content-center
+            items-center
+            justify-items-center
+            md:hidden
         "
 	>
 		{#each data.newsItems as newsItem, i}
-            {#if i > 0}
-                <div aria-hidden="true" class="w-full border-t border-stone-400"></div>
-            {/if}
+			{#if i > 0}
+				<div aria-hidden="true" class="w-full border-t border-stone-400"></div>
+			{/if}
 			<Card {newsItem} />
-            <div class:border-t={i > 0} class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 mt-1 mb-4 bg-[#f4fde2]">
-                <p class="p-5 text-sm italic text-gray-700">
-                    {newsItem.commentary}
-                </p>
-            </div>
+			<div
+				class:border-t={i > 0}
+				class="col-span-1 mx-4 mt-1 mb-4 content-center rounded-lg border border-gray-200 bg-[#f4fde2] shadow-sm lg:col-span-2"
+			>
+				<p class="p-5 text-sm text-gray-700 italic">
+					{newsItem.commentary}
+				</p>
+			</div>
 		{/each}
 	</div>
 
 	<div
 		class="
         hidden
-        md:grid
         grid-cols-1
+        content-center
         items-center
         justify-items-center
-        content-center
+        bg-contain
 
-        md:grid-cols-2
+        bg-bottom
 
-        lg:grid-cols-3
-    "
+        bg-no-repeat
+		md:grid md:grid-cols-2 lg:grid-cols-3"
+		style={'background-image: url(' + rsaImage + ')'}
 	>
 		{#each data.newsItems as newsItem, i}
 			{#if newsItem.commentary && i % 2 === 1}
-				<div class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 ml-4 mr-1 bg-[#f4fde2]">
-					<p class="p-5 text-sm italic text-gray-700">
+				<div
+					class="col-span-1 mx-4 mr-1 ml-4 content-center rounded-lg border border-gray-200 bg-[#f4fde2] shadow-sm lg:col-span-2"
+				>
+					<p class="p-5 text-sm text-gray-700 italic">
 						{newsItem.commentary}
 					</p>
 				</div>
 			{/if}
 			<Card {newsItem} />
 			{#if newsItem.commentary && i % 2 === 0}
-				<div class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 ml-1 mr-4 bg-[#f4fde2]">
-					<p class="p-5 text-sm italic text-gray-700">
+				<div
+					class="col-span-1 mx-4 mr-4 ml-1 content-center rounded-lg border border-gray-200 bg-[#f4fde2] shadow-sm lg:col-span-2"
+				>
+					<p class="p-5 text-sm text-gray-700 italic">
 						{newsItem.commentary}
 					</p>
 				</div>
@@ -116,10 +132,10 @@
 {/if}
 
 {#if data.quote}
-	<div class="mb-4 w-full content-center justify-center justify-self-center text-sm text-white italic bg-[#88a078] p-4 rounded">
-		<div class="font-semibold mb-2">
-			QUOTE OF THE WEEK:
-		</div>
+	<div
+		class="mb-4 w-full content-center justify-center justify-self-center rounded bg-[#88a078] p-4 text-sm text-white italic"
+	>
+		<div class="mb-2 font-semibold">QUOTE OF THE WEEK:</div>
 		<div class="mb-2">
 			"{data.quote.text}"
 		</div>
@@ -150,45 +166,47 @@
 						{#if editorialCopied}Copied!{:else}Copy link to Clipboard{/if}
 					</div>
 					<div
-						class="absolute bottom-10 left-7 border-l-[12px] border-r-[12px] border-t-[18px] border-l-transparent border-r-transparent border-t-red-700"
+						class="absolute bottom-10 left-7 border-t-[18px] border-r-[12px] border-l-[12px] border-t-red-700 border-r-transparent border-l-transparent"
 					></div>
 				</div>
 			{/if}
 		</NavBarDropDown>
-        {#if data.editorial.title}
-            A Word On...
-        {:else}
-            This Week’s Editorial
-        {/if}
+		{#if data.editorial.title}
+			A Word On...
+		{:else}
+			This Week’s Editorial
+		{/if}
 	</div>
 
-	{#if data.editorial.title}
-		<div>
-			<div class="font-bold">{data.editorial.title}</div>
+	<div class="mb-0 pb-4 bg-contain bg-bottom bg-no-repeat" style={'background-image: url(' + rsaImage + ')'}>
+		{#if data.editorial.title}
+			<div>
+				<div class="font-bold">{data.editorial.title}</div>
 
-			{#if data.editorial.subtitle}
-				<div class="text-[18px] italic">{data.editorial.subtitle}</div>
+				{#if data.editorial.subtitle}
+					<div class="text-[18px] italic">{data.editorial.subtitle}</div>
+				{/if}
+			</div>
+		{/if}
+
+		<div class="w-full max-w-[100%] justify-self-center md:max-w-[75%]">
+			{#each data.editorial.paragraphs as paragraph}
+				<div class="my-4 px-6 text-left indent-8 text-base">
+					{paragraph}
+				</div>
+			{/each}
+
+			{#if data.editorial.author}
+				<div class="my-4 pl-12 text-right text-base">- {data.editorial.author}</div>
 			{/if}
 		</div>
-	{/if}
-
-	<div class="mb-4 w-full max-w-[100%] justify-self-center md:max-w-[75%]">
-		{#each data.editorial.paragraphs as paragraph}
-			<div class="my-4 px-6 text-left indent-8 text-base">
-				{paragraph}
-			</div>
-		{/each}
-
-		{#if data.editorial.author}
-			<div class="my-4 pl-12 text-right text-base">- {data.editorial.author}</div>
-		{/if}
 	</div>
 {/if}
 
 {#if data.events}
 	<div
 		id="events"
-		class="relative mt-4 w-full justify-self-center bg-[#872D23] py-2 font-bold text-white"
+		class="relative mt-0 pt-4 w-full justify-self-center bg-[#872D23] py-2 font-bold text-white"
 	>
 		<NavBarDropDown let:hovering={active}>
 			<button
@@ -206,7 +224,7 @@
 						{#if eventsCopied}Copied!{:else}Copy link to Clipboard{/if}
 					</div>
 					<div
-						class="absolute bottom-10 left-7 border-l-[12px] border-r-[12px] border-t-[18px] border-l-transparent border-r-transparent border-t-red-700"
+						class="absolute bottom-10 left-7 border-t-[18px] border-r-[12px] border-l-[12px] border-t-red-700 border-r-transparent border-l-transparent"
 					></div>
 				</div>
 			{/if}
@@ -214,24 +232,28 @@
 		Upcoming Events
 	</div>
 
-	<table class="mb-8 border-collapse border-spacing-4 justify-self-center text-base text-[#872D23]">
-		<tbody>
-			{#each data.events as event, i}
-				<tr>
-					<td class:border-t={i > 0} class="justify-self-end py-4 pr-4 text-right">
-						{#each event.when as line}
-							<div>{line}</div>
-						{/each}
-					</td>
-					<td class:border-t={i > 0} class="justify-self-start py-4 pl-4 text-left">
-						{#each event.title as line}
-							<div>{line}</div>
-						{/each}
-					</td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
+	<div class="bg-contain bg-bottom bg-no-repeat" style={'background-image: url(' + rsaImage + ')'}>
+		<table
+			class="mb-8 border-collapse border-spacing-4 justify-self-center text-base text-[#872D23]"
+		>
+			<tbody>
+				{#each data.events as event, i}
+					<tr>
+						<td class:border-t={i > 0} class="justify-self-end py-4 pr-4 text-right">
+							{#each event.when as line}
+								<div>{line}</div>
+							{/each}
+						</td>
+						<td class:border-t={i > 0} class="justify-self-start py-4 pl-4 text-left">
+							{#each event.title as line}
+								<div>{line}</div>
+							{/each}
+						</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
 {/if}
 
 <div class="flex w-full content-center justify-center justify-self-center bg-[#f9f3c6] py-2">
@@ -261,7 +283,7 @@
 	class="my-4 flex items-center justify-self-center italic hover:opacity-65"
 >
 	<div class="">Subscribe to</div>
-	<svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 260 245" class="ml-2 mr-1 h-7">
+	<svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 260 245" class="mr-1 ml-2 h-7">
 		<path d="m56,237 74-228 74,228L10,96h240" />
 	</svg>
 	<div class="font-serif">The Red Star Advertiser!</div>

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
 
+	import rsaImage from '$lib/assets/rsa_bg_l.png';
+
 	const months = [
 		'January',
 		'February',
@@ -46,7 +48,7 @@
 	<div class="my-4 text-base">by <b>{author}</b> from <a href="https://hnltenantsunion.org/" target="_blank" class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 hover:visited:text-purple-800">Honolulu Tenants Union</a></div>
 </div>
 
-<div class="mb-4 space-y-4 w-full max-w-[100%] justify-self-center text-left text-base px-8 md:px-0 md:max-w-[75%]">
+<div class="mb-0 pb-4 space-y-4 w-full max-w-[100%] justify-self-center text-left text-base px-8 md:px-0 md:max-w-[75%] bg-bottom bg-contain bg-no-repeat" style={'background-image: url(' + rsaImage + ')'}>
 	<p class="indent-8">"Hell hole."</p>
 
 	<p class="indent-8">These words have become synonymous with Union Plaza, whose tenants are embroiled in a bitter fight with Chad Waters, who has aptly earned the title "Slumlord of the Year" after over two months of engaging in increasingly cruel and illegal actions that have resulted in truly hellish living conditions for everyone residing in the building.</p>

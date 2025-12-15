@@ -30,7 +30,10 @@
 			id: 5,
 			label: 'Red Star Advertiser',
 			route: '/redstar',
-			children: [{ id: 1, label: 'Past Issues', route: '/redstar/past' }]
+			children: [
+				{ id: 1, label: 'Past Issues', route: '/redstar/past' },
+				{ id: 2, label: 'Union Plaza', route: '/redstar/news/the-real-deal-about-union-plaza' }
+			]
 		}
 	];
 
@@ -56,18 +59,20 @@
 
 <NavBar {navItems} {socials} />
 
-<main class="
+<main
+	class="
 	font-StyreneB
-	grid
 	my-4
+	grid
     max-w-xl
-    md:max-w-3xl
-    lg:max-w-5xl
-    xl:max-w-6xl
-	justify-self-center
-	text-center
-	text-2xl
-">
+    justify-self-center
+    text-center
+    text-2xl
+	md:max-w-3xl
+	lg:max-w-5xl
+	xl:max-w-6xl
+"
+>
 	{@render children()}
 </main>
 
