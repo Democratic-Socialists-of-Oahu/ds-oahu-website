@@ -117,6 +117,20 @@
 		</div>
 
 		<div class="flex" id="social-buttons">
+			<a
+				id="dues-link"
+				class="
+					nav-item
+					nav-link
+					text-white
+					font-semibold
+					opacity-50
+					hover:opacity-100
+					"
+				href="https://www.zeffy.com/en-US/donation-form/dso-dues"
+				target="_blank"
+				aria-label="dues-link"
+			>Pay your dues!</a>
 			{#each socials as social}
 				<a
 					class="bi {social.class} ml-2 text-xl text-white opacity-50 hover:opacity-100"

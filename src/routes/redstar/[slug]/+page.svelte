@@ -34,22 +34,23 @@
 	}
 </script>
 
-<div class="mb-4 flex w-full content-center justify-center justify-self-center bg-[#f9f3c6] py-2">
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		fill="red"
-		viewBox="0 0 260 245"
-		class="mr-1 h-14 md:mr-2 md:h-16"
-	>
-		<path d="m56,237 74-228 74,228L10,96h240" />
-	</svg>
-	<div>
-		<div class="font-serif text-3xl italic md:text-4xl">The Red Star Advertiser</div>
-		<div class="text-right text-base md:text-lg">
-			Issue {data.number}, {months[data.date.getMonth()]}
-			{data.date.getDate()}, {data.date.getFullYear()}
-		</div>
-	</div>
+<div class="flex">
+    <div class="content-center size-24 mb-4 mr-2 border border-4 bg-white">
+        <p class="text-xs">issue</p>
+        <p>{data.number}</p>
+        <p class="text-xs">{months[data.date.getMonth()].slice(0, 3)}. {data.date.getDate()} '{data.date.getFullYear().toString().slice(2)}</p>
+    </div>
+    <div class="mb-4 flex w-full items-center content-center justify-center justify-self-center bg-[#f9f3c6] py-2">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="red"
+            viewBox="0 0 260 245"
+            class="mr-1 h-14 md:mr-2 md:h-16"
+        >
+            <path d="m56,237 74-228 74,228L10,96h240" />
+        </svg>
+        <div class="content-center font-serif text-3xl italic md:text-4xl">The Red Star Advertiser</div>
+    </div>
 </div>
 
 {#if data.newsItems}
@@ -57,19 +58,74 @@
 
 	<div
 		class="
-        grid
+            grid
+            md:hidden
+            grid-cols-1
+            items-center
+            justify-items-center
+            content-center
+            border-collapse
+            border-spacing-4
+        "
+	>
+		{#each data.newsItems as newsItem, i}
+            {#if i > 0}
+                <div aria-hidden="true" class="w-full border-t border-stone-400"></div>
+            {/if}
+			<Card {newsItem} />
+            <div class:border-t={i > 0} class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 mt-1 mb-4 bg-[#f4fde2]">
+                <p class="p-5 text-sm italic text-gray-700">
+                    {newsItem.commentary}
+                </p>
+            </div>
+		{/each}
+	</div>
+
+	<div
+		class="
+        hidden
+        md:grid
         grid-cols-1
-        items-start
+        items-center
         justify-items-center
+        content-center
 
         md:grid-cols-2
 
         lg:grid-cols-3
     "
 	>
-		{#each data.newsItems as newsItem}
+		{#each data.newsItems as newsItem, i}
+			{#if newsItem.commentary && i % 2 === 1}
+				<div class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 ml-4 mr-1 bg-[#f4fde2]">
+					<p class="p-5 text-sm italic text-gray-700">
+						{newsItem.commentary}
+					</p>
+				</div>
+			{/if}
 			<Card {newsItem} />
+			{#if newsItem.commentary && i % 2 === 0}
+				<div class="content-center col-span-1 lg:col-span-2 rounded-lg border border-gray-200 shadow-sm mx-4 ml-1 mr-4 bg-[#f4fde2]">
+					<p class="p-5 text-sm italic text-gray-700">
+						{newsItem.commentary}
+					</p>
+				</div>
+			{/if}
 		{/each}
+	</div>
+{/if}
+
+{#if data.quote}
+	<div class="mb-4 w-full content-center justify-center justify-self-center text-sm text-white italic bg-[#88a078] p-4 rounded">
+		<div class="font-semibold mb-2">
+			QUOTE OF THE WEEK:
+		</div>
+		<div class="mb-2">
+			"{data.quote.text}"
+		</div>
+		<div>
+			- {data.quote.source}
+		</div>
 	</div>
 {/if}
 
@@ -99,7 +155,11 @@
 				</div>
 			{/if}
 		</NavBarDropDown>
-		This Week’s Editorial
+        {#if data.editorial.title}
+            A Word On...
+        {:else}
+            This Week’s Editorial
+        {/if}
 	</div>
 
 	{#if data.editorial.title}
@@ -154,7 +214,7 @@
 		Upcoming Events
 	</div>
 
-	<table class="mb-8 border-collapse border-spacing-4 justify-self-center text-base">
+	<table class="mb-8 border-collapse border-spacing-4 justify-self-center text-base text-[#872D23]">
 		<tbody>
 			{#each data.events as event, i}
 				<tr>
@@ -192,7 +252,7 @@
 	</div>
 </div>
 <div class="w-full max-w-[75%] text-right text-sm">
-	a Democratic Socialists of O‘ahu publication
+	a publication by the Democratic Socialists of O‘ahu
 </div>
 
 <a

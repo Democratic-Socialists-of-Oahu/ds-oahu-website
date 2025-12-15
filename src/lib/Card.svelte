@@ -18,7 +18,7 @@
 				</h5>
 			</a>
 		{/if}
-		<p class="mb-3 text-sm font-normal text-gray-700">
+		<p class="mb-3 text-sm font-semibold text-gray-700">
 			{newsItem.content}
 		</p>
 		<a

@@ -2,6 +2,73 @@ import type { RedStarIssue } from '$lib/Types';
 
 export const issues: RedStarIssue[] = [
 	{
+		number: 15,
+		date: new Date('2025-11-03T12:00:00'),
+		newsItems: [
+			{
+				href: 'https://www.hawaiinewsnow.com/2025/10/30/hawaii-relief-program-aims-protect-families-federal-shutdown-impacts/',
+				content:
+					'165,000 households have lost access to SNAP due to the federal government shutdown, the state has announced programs to assist needy families. While only a third of SNAP recipients are eligible for state aid, the linked article contains information for other food assistance resources.',
+				commentary:
+					'The Trump administration is making explicitly clear the war the ruling class has waged on the working people and the death of the social services 20th century socialist and anti-racist organizing has produced. While these programs have been weakened and subject to alt-right racist fearmongering, they still safeguard thousands of working people in Hawaiʻi alone from hunger. Hunger exists under capitalism as a tool of economic coercion: it forces everyone to work and produce profit for the bosses rather than providing for ourselves and our community. Our long term solution is socialism, but in the meanwhile it is our practice to support existing people- serving institutions.',
+				source: 'Hawaii News Now'
+			},
+			{
+				href: 'https://apnews.com/article/hurricane-melissa-cuba-jamaica-flooding-winds-275a4d2d41a0ff3f382053865eefe295',
+				content:
+					'Hurricane Melissa, one of the strongest Atlantic Hurricanes to date, has decimated Jamaica, Cuba, and Haiti. In Jamaica, critical "rescue infrastructure" was seriously compromised and all throughout the Caribbean many are missing, with some 40 confirmed fatalities.',
+				commentary:
+					"Jamaica, Cuba, and Haiti have long been conduits of revolution and resistance, both regionally and on the global scale. All three have been tortured for their righteous struggle. France's imposition of debt on Haiti, American support of Batista, British construction of political tribalism in Jamaica, and the Neoliberal extraction that all these nations face, all of these are major impediments in the historical development of the peoples in these nations-- and intensify the crises that these nations face. Support our siblings and donate to disaster funds.",
+				source: 'Associated Press'
+			},
+			{
+				href: 'https://www.reuters.com/world/asia-pacific/japans-new-premier-pledges-early-boost-defence-spending-proactive-fiscal-moves-2025-10-24/',
+				content:
+					'In spite of Article 9 preventing Japan from maintaining a military, new Prime Minister Sanae Takaichi is promising to boost defense spending up to 2% of GDP with potential to surpass that mark. While defense spending has historically been capped at 1% of GDP, Takaichi believes increased spending will stimulate the Japanese economy and plans to focus on debt-to-GDP ratio rather than maintaining a balanced budget.',
+				commentary: `Japan is militarizing in a concerning way in the context of American reenterence into the Pacific Theatre of war. Especially following the election of Fascist Girlboss Prime Minister Sanae Takaichi, this is critical reading as Japan takes on its role as "Washington's Unsinkable Aircraft Carrier" with enthusiasm, and the escalation of war in the Pacific threatens us Pacific people. For further analysis, check out Comrawire substack article "Japan's Militarized Comeback as Washington's Unsinkable Aircraft Carrier" https://tinyurl.com/`,
+				source: 'Reuters'
+			}
+		],
+		quote: {
+			text: "Gramsci used to say 'Pessimism of the intellect, optimism of the will'. What he meant is: understand how the bloody system works. What confronts you? The fact that the terrain is not favourable to your project. Understand that, even if it disillusions you, even if it makes you awake at night. Understand it. Then you're in a position to say 'Well what is.... what can change? Where are the emergent forces? Where are the cracks and the contradictions? What are the elements in popular consciousness one could mobilise for a different political program?",
+			source: 'Stuart Hall'
+		},
+		editorial: {
+			paragraphs: [
+				`Queer people are under attack. Not just what we see in the news: the hate crimes, open discrimination, and horrible representation in mainstream culture. We feel it in our personal lives. Violations for uniform guidelines, constant misgenderings, mental illness, unemployment, and just a general feeling of insecurity. We should do something about it. We need to have a clear picture of what it means to be queer under capitalism, identify the causes for the issues we face and work tirelessly towards our collective liberation. Queer is not merely a self identity, it is a material class.`,
+				`Bell Hooks invokes a specific kind of queerness which is forgotten in capitalist gay culture which reduces queerness to an opt-in identity. The often quoted "Queer, as being about the self which is at odds with everything around it." Queer is queer because there is a constructed normal: a normal constructed and maintained by capitalism. And White-Power Capitalism must condemn that which deviates and defies.`,
+				`The violence queer people face is built using both the police in the form of raids and counterinsurgency efforts- but also in the production of a popular culture which encourages violence against queers. This violence is internalized by bigots but it also can be replicated in our own house! Just because someone is queer doesn't mean that they can't also be a rapist.`,
+				`Safe nightlife spaces specifically for queer and trans people are so slim it's understandable that there is a push for events to be given the "safe space" label. The failure to consider the underlying capitalist system leaves wide gaps in the construction of "safe spaces". When phrases like "being in community" are used, who are we actually in community with? Is it your queer boss who fired you last week that you made awkward eye contact with at Scarlet? Maybe even your landlord who you run into at the gay bar every now and then? Simply being queer doesn't excuse a capitalist from the violence they enact against other queer and trans working class people every day. The inequalities of living under capitalism don't disappear when you sign onto a list of community agreements.`,
+				`Without a mechanism to enforce those community agreements, or the ability to follow up with people before and after the event, they hold zero weight. Truly safe spaces involve the creation of community and solidarity, therefore it requires all participants to know and trust each other, and hold each other accountable for any harm done. It doesn't matter how accepting of gender nonconformity a space or organization is, if they have not put in the work, they cannot be considered "safe".`,
+				`The solution then is to get organized! Join an organization and meet other queer people that can provide support for each other. Communication networks that organization provides can alert people to known predators in the community and even use collective power to seek accountability. Above all, your organization should use that collective power to attack the root cause of our oppression: the capitalist system that gives the people that hate us the power to deny us liberation.`
+			],
+			author: 'e, Untz, I. HC',
+			title: 'Queerness and Safe Spaces'
+		},
+		events: [
+			{
+				when: ['Ongoing, Every Day', '6AM-8PM', 'Kapiolani Medical Center'],
+				title: ['Teamsters Strike']
+			},
+			{
+				when: ['Every Sunday', '5PM', 'Thomas Square'],
+				title: ['Food Not Bombs [FNB] Potluck, Mutual Aid, Community Meeting']
+			},
+			{
+				when: ['Saturday, November 8', '3PM', 'Stadium Park'],
+				title: ['Struggles in Guam', 'Teach In + Potluck']
+			},
+			{
+				when: ['Sunday, November 9', '3PM'],
+				title: ['Democratic Socialists of O’ahu - General Meeting']
+			},
+			{
+				when: ['Sunday, November 16', '10AM', 'Ka’ala Farms Wai’anae'],
+				title: ['Ka’ala Farms ’Āina Day']
+			}
+		]
+	},
+	{
 		number: 12,
 		date: new Date('2025-10-03T12:00:00'),
 		newsItems: [
@@ -31,8 +98,7 @@ export const issues: RedStarIssue[] = [
 			},
 			{
 				href: 'https://www.cnn.com/2025/09/25/business/argentina-bailout-trump-milei',
-				content:
-					'Argentina’s President Milei’s “Libertarian Capitalism” has plunged the nation into crisis: causing sweeping unemployment, business closures, and financial instability for the masses. Trump is sending $20 Billion in taxpayer money to bailout his buddy-in-deregulation.',
+				content: `Argentina's President Milei's “Libertarian Capitalism” has plunged the nation into crisis: causing sweeping unemployment, business closures, and financial instability for the masses. Trump is sending $20 Billion in taxpayer money to bailout his buddy-in-deregulation.`,
 				source: 'CNN'
 			},
 			{

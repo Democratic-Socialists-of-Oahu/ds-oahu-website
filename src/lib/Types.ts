@@ -24,6 +24,12 @@ export type NewsItemType = {
 	image?: string;
 	href: string;
 	content: string;
+	commentary?: string;
+	source: string;
+};
+
+export type Quote = {
+	text: string;
 	source: string;
 };
 
@@ -43,6 +49,17 @@ export type RedStarIssue = {
 	number: number;
 	date: Date;
 	newsItems?: NewsItemType[];
+	quote?: Quote;
 	editorial?: Editorial;
 	events?: RedStarEvent[];
+};
+
+export type RedStarArticle = {
+	id: number;
+	slug: string;
+	date: Date;
+	title?: string;
+	subtitle?: string;
+	author?: string;
+	content: string;
 };
