@@ -126,6 +126,7 @@
 					font-semibold
 					opacity-50
 					hover:opacity-100
+					mr-4
 					"
 				href="https://www.zeffy.com/en-US/donation-form/dso-dues"
 				target="_blank"
