@@ -1,11 +1,13 @@
 <script lang="ts">
 </script>
 
-<h2 id="constitution" class="text-4xl mb-4">CONSTITUTION</h2>
+<h2 id="constitution" class="mb-4 text-4xl">CONSTITUTION</h2>
 
-<h4 id="article-i-name-and-affiliation" class="text-left font-bold mb-2">Article I. Name and Affiliation</h4>
+<h4 id="article-i-name-and-affiliation" class="mb-2 text-left font-bold">
+	Article I. Name and Affiliation
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		The name of the organization shall be “Democratic Socialists of O‘ahu”, hereafter referred to as
 		“DSO”.
@@ -16,9 +18,11 @@
 	</li>
 </ol>
 
-<h4 id="article-ii-purpose-and-mission-statement" class="text-left font-bold mb-2">Article II. Purpose and Mission Statement</h4>
+<h4 id="article-ii-purpose-and-mission-statement" class="mb-2 text-left font-bold">
+	Article II. Purpose and Mission Statement
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		Our mission is to aid in educating, organizing, and liberating the people and ʻāina of Kō
 		Hawaiʻi Pae ʻĀina and to play a helpful and principled role in the movement for liberation
@@ -31,9 +35,9 @@
 	</li>
 </ol>
 
-<h4 id="article-iii-membership" class="text-left font-bold mb-2">Article III. Membership</h4>
+<h4 id="article-iii-membership" class="mb-2 text-left font-bold">Article III. Membership</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		Membership in DSO shall be open to any resident of Oʻahu who professes socialist or communist
 		and pro-Hawaiian independence beliefs, and engages in their principled application and is at
@@ -55,9 +59,11 @@
 	</li>
 </ol>
 
-<h4 id="article-iv-steering-committee-and-duties" class="text-left font-bold mb-2">Article IV. Steering Committee and Duties</h4>
+<h4 id="article-iv-steering-committee-and-duties" class="mb-2 text-left font-bold">
+	Article IV. Steering Committee and Duties
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		The Steering Committee (SC) shall be composed of two (2) Chairs, one (1) Secretary, one (1)
 		Treasurer, and one (1) Communications Chair.
@@ -77,7 +83,9 @@
 				In the event that no candidate reaches a majority, a runoff between the candidates with the
 				highest vote totals will take place immediately afterwards.
 			</li>
-			<li class="">In the event of a tie, successive votes will be held until a winner is determined.</li>
+			<li class="">
+				In the event of a tie, successive votes will be held until a winner is determined.
+			</li>
 		</ul>
 	</li>
 	<li class="">
@@ -89,7 +97,7 @@
 				after the announcement.
 			</li>
 			<li class="">
-				All Steering Committee positions shall be subject to a two consecutive term limitation.
+				All Steering Committee positions shall be subject to a limit of four consecutive terms.
 			</li>
 		</ul>
 	</li>
@@ -124,10 +132,14 @@
 				To build two contact lists of emails and phone numbers.
 				<ul class="list-disc pl-8">
 					<li class="">One for DSO members.</li>
-					<li class="">One for our wider list of supporters, drawn from our sign-in sheets at events.</li>
+					<li class="">
+						One for our wider list of supporters, drawn from our sign-in sheets at events.
+					</li>
 				</ul>
 			</li>
-			<li class="">To update and maintain a calendar on the DSO website listing our upcoming events.</li>
+			<li class="">
+				To update and maintain a calendar on the DSO website listing our upcoming events.
+			</li>
 			<li class="">
 				To organize DSO documents to ensure writings, graphic design, and other resources are
 				readily available to be used by the current and future SCs.
@@ -153,7 +165,9 @@
 	<li class="">
 		The duties of the Communications Chair shall be:
 		<ul class="list-disc pl-8">
-			<li class="">To manage DSO’s social media, including the Instagram and Twitter accounts and email.</li>
+			<li class="">
+				To manage DSO’s social media, including the Instagram and Twitter accounts and email.
+			</li>
 			<li class="">
 				To regularly check DSO’s email account and respond promptly to enquiries with prior
 				notification to and permission from the SC.
@@ -177,9 +191,9 @@
 	</li>
 </ol>
 
-<h4 id="article-v-funding" class="text-left font-bold mb-2">Article V. Funding</h4>
+<h4 id="article-v-funding" class="mb-2 text-left font-bold">Article V. Funding</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		DSO shall be funded through the following means: Fundraisers, DSO dues, and contributions and
 		scholarships from Democratic Socialists of America.
@@ -199,9 +213,9 @@
 	</li>
 </ol>
 
-<h4 id="article-vi-meetings" class="text-left font-bold mb-2">Article VI. Meetings</h4>
+<h4 id="article-vi-meetings" class="mb-2 text-left font-bold">Article VI. Meetings</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		General Body Meetings (GBMs) will be held a minimum of four (4) times per year, held in person
 		in a physical location, with options for virtual attendance. The day of the week and times will
@@ -240,9 +254,9 @@
 	<li class="">A quorum for any GBM shall be one-half (½) of members in good standing.</li>
 </ol>
 
-<h4 id="article-vii-powers" class="text-left font-bold mb-2">Article VII. Powers</h4>
+<h4 id="article-vii-powers" class="mb-2 text-left font-bold">Article VII. Powers</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		General Body Meetings (GBMs) are the highest decision-making body of DSO, and are where votes
 		for priority campaigns, SC elections, DSA Convention delegate elections, the adoption of DSO’s
@@ -263,10 +277,12 @@
 	<li class="">
 		The SC is tasked with executing the decisions of GBMs and providing political leadership to DSO.
 		The SC is tasked with the every-day work of running DSO and organizing events. Votes by the SC
-		should take place at weekly meetings, or at special meetings when decisions need to be made
+		should take place at standing meetings, or at special meetings when decisions need to be made
 		quickly in response to current events.
 		<ul class="list-disc pl-8">
-			<li class="">Decisions made by the SC can be overruled by a simple majority vote of the GBM.</li>
+			<li class="">
+				Decisions made by the SC can be overruled by a simple majority vote of the GBM.
+			</li>
 			<li class="">
 				Any official and nonsecure Steering Committee communications must be made visible to the
 				general membership at the request of any member. Secure communications require a majority
@@ -303,9 +319,8 @@
 				</ul>
 			</li>
 			<li class="">
-				Working Groups will be chartered to exist for one (1) quarter, or until the end of the next
-				quarter in which it was proposed. After this point, the SC may vote on whether to extend
-				their charter for further semesters or dissolve the WG.
+				Working groups will be chartered to the length specified in their charter. The GBM will vote
+				to re-charter or dissolve existing bodies at will or at the expiration of the charter.
 			</li>
 		</ul>
 	</li>
@@ -320,9 +335,11 @@
 	</li>
 </ol>
 
-<h4 id="article-viii-amendment-of-bylaws" class="text-left font-bold mb-2">Article VIII. Amendment of Bylaws</h4>
+<h4 id="article-viii-amendment-of-bylaws" class="mb-2 text-left font-bold">
+	Article VIII. Amendment of Bylaws
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		These bylaws may be amended at any GBM of the organization by a two-thirds vote, provided that
 		the amendment has been submitted in writing to the Steering Committee at the previous Steering
@@ -330,9 +347,11 @@
 	</li>
 </ol>
 
-<h4 id="article-ix-harassment-policy" class="text-left font-bold mb-2">Article IX. Harassment Policy</h4>
+<h4 id="article-ix-harassment-policy" class="mb-2 text-left font-bold">
+	Article IX. Harassment Policy
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		The chapter grievance process, including the process for reporting, remedies, and penalties,
 		will be based on Resolution 33 passed by the DSA Convention.
@@ -379,9 +398,11 @@
 	</li>
 </ol>
 
-<h4 id="article-x-dissolution-clause" class="text-left font-bold mb-2">Article X. Dissolution Clause</h4>
+<h4 id="article-x-dissolution-clause" class="mb-2 text-left font-bold">
+	Article X. Dissolution Clause
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		Should the organization be dissolved due to lack of interest or other reasons, it is the
 		responsibility of the current president to notify membership that they have disbanded and
@@ -391,9 +412,11 @@
 	</li>
 </ol>
 
-<h4 id="article-xi-secession-clause" class="text-left font-bold mb-2">Article XI. Secession Clause</h4>
+<h4 id="article-xi-secession-clause" class="mb-2 text-left font-bold">
+	Article XI. Secession Clause
+</h4>
 
-<ol class="text-left text-sm mb-4 list-decimal pl-12">
+<ol class="mb-4 list-decimal pl-12 text-left text-sm">
 	<li class="">
 		Given the occupation, colonization, and militarization of Kō Hawaiʻi Pae ʻĀina by the United
 		States of America, DSO shall secede from the National DSA in the event that the National DSA
