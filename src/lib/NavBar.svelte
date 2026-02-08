@@ -123,6 +123,19 @@
 					nav-item
 					nav-link
 					text-white
+					{page.url.pathname.includes('/endorsement') ? 'font-bold opacity-100' : 'font-semibold opacity-50'}
+					hover:opacity-100
+					mr-4
+					"
+				href="/endorsement"
+				aria-label="endorse-link"
+			>Get Endorsed</a>
+			<a
+				id="dues-link"
+				class="
+					nav-item
+					nav-link
+					text-white
 					font-semibold
 					opacity-50
 					hover:opacity-100
