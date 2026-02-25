@@ -14,7 +14,13 @@
 		{
 			id: 2,
 			label: 'Bylaws',
-			route: '/bylaws'
+			route: '/bylaws',
+			children: [
+				{ id: 1, label: 'Communications', route: '/bylaws/communications' },
+				{ id: 2, label: 'Membership', route: '/bylaws/membership' },
+				{ id: 3, label: 'Mutual Aid', route: '/bylaws/mutual-aid' },
+				{ id: 4, label: 'Political Education', route: '/bylaws/political-education' }
+			]
 		},
 		{
 			id: 3,

@@ -9,6 +9,8 @@
 	export let socials: SocialType[];
 </script>
 
+<!-- TODO: fix element ids -->
+
 <div class="justify-items-center justify-self-center w-full max-w-6xl">
 	<header class="mb-4 mt-12 justify-items-center">
 		<a href="/">
