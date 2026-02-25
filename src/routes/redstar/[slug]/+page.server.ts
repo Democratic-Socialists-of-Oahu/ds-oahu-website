@@ -3,10 +3,9 @@ import type { PageServerLoad } from './$types';
 import type { EntryGenerator } from './$types';
 
 import { issues } from '$lib/red_star/issues';
-import type { RedStarIssue } from '$lib/Types';
 
 export const load: PageServerLoad = async ({ params }) => {
-	const issue: RedStarIssue = issues[params.slug];
+	const issue = issues[issues.length - params.slug];
 
 	if (issue) {
 		return issue;
