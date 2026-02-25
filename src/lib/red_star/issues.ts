@@ -1,7 +1,7 @@
-import type { RedStarIssue } from '$lib/Types';
+// import type { RedStarIssue } from '$lib/Types';
 
-export const issues: RedStarIssue[] = [
-	{
+export const issues: object = {
+	'15': {
 		number: 15,
 		date: new Date('2025-11-03T12:00:00'),
 		newsItems: [
@@ -68,7 +68,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'12': {
 		number: 12,
 		date: new Date('2025-10-03T12:00:00'),
 		newsItems: [
@@ -155,7 +155,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'11': {
 		number: 11,
 		date: new Date('2025-09-19T12:00:00'),
 		newsItems: [
@@ -235,7 +235,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'10': {
 		number: 10,
 		date: new Date('2025-09-05T12:00:00'),
 		newsItems: [
@@ -316,7 +316,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'9': {
 		number: 9,
 		date: new Date('2025-08-22T12:00:00'),
 		newsItems: [
@@ -398,7 +398,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'8': {
 		number: 8,
 		date: new Date('2025-08-08T12:00:00'),
 		newsItems: [
@@ -482,7 +482,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'7': {
 		number: 7,
 		date: new Date('2025-07-25T12:00:00'),
 		newsItems: [
@@ -556,7 +556,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'6': {
 		number: 6,
 		date: new Date('2025-07-11T12:00:00'),
 		newsItems: [
@@ -638,7 +638,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'5': {
 		number: 5,
 		date: new Date('2025-06-26T12:00:00'),
 		newsItems: [
@@ -708,7 +708,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'4': {
 		number: 4,
 		date: new Date('2025-06-12T12:00:00'),
 		newsItems: [
@@ -790,7 +790,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'3': {
 		number: 3,
 		date: new Date('2025-05-29T12:00:00'),
 		newsItems: [
@@ -872,7 +872,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'2': {
 		number: 2,
 		date: new Date('2025-05-15T12:00:00'),
 		newsItems: [
@@ -944,7 +944,7 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	},
-	{
+	'1': {
 		number: 1,
 		date: new Date('2025-05-01T12:00:00'),
 		newsItems: [
@@ -1018,4 +1018,4 @@ export const issues: RedStarIssue[] = [
 			}
 		]
 	}
-];
+};
