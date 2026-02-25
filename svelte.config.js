@@ -4,13 +4,12 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
     kit: {
 
-        adapter: adapter({
-            fallback: 'index.html'
-        }),
+        adapter: adapter(),
         paths: {
             base: process.argv.includes('dev') ? '' : '/ds-oahu-website'
         },
         prerender: {
+            default: true,
             handleHttpError: 'warn'
         }
     }
