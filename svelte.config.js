@@ -11,7 +11,6 @@ const config = {
             base: process.argv.includes('dev') ? '' : '/ds-oahu-website'
         },
         prerender: {
-            default: true,
             handleHttpError: 'warn'
         }
     }
