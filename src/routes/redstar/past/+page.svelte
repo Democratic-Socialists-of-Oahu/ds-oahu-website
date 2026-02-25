@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	import { issues } from '$lib/red_star/issues';
 
 	const months = [
@@ -23,7 +25,7 @@
 			<div class="flex min-w-0 gap-x-4">
 				<div class="min-w-0 flex-auto">
 					<p class="text-sm font-semibold text-gray-900">
-						<a href="/redstar/{issue.number}">
+						<a href="{resolve('/redstar') + '/' + issue.number}">
 							<span class="absolute inset-x-0 -top-px bottom-0"></span>
 							{months[issue.date.getMonth()]}
 							{issue.date.getDate()}, {issue.date.getFullYear()}

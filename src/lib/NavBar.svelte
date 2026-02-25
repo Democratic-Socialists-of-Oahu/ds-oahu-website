@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { asset } from '$app/paths';
 	import { page } from '$app/state';
 	import { slide } from 'svelte/transition';
 
@@ -14,7 +15,7 @@
 <div class="justify-items-center justify-self-center w-full max-w-6xl">
 	<header class="mb-4 mt-12 justify-items-center">
 		<a href="/">
-			<img class="mb-3" src="/images/dso_logo_128.png" alt="DSO Logo" width="120" height="120" />
+			<img class="mb-3" src="{asset(`/images/dso_logo_128.png`)}" alt="DSO Logo" width="120" height="120" />
 		</a>
 		<h1 class="font-StyreneB text-center text-4xl font-bold">Democratic Socialists of O'ahu</h1>
 	</header>

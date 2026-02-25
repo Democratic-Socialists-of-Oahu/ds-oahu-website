@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	import '../app.css';
 	let { children } = $props();
 
@@ -14,31 +16,31 @@
 		{
 			id: 2,
 			label: 'Bylaws',
-			route: '/bylaws',
+			route: resolve('/bylaws'),
 			children: [
-				{ id: 1, label: 'Communications', route: '/bylaws/communications' },
-				{ id: 2, label: 'Membership', route: '/bylaws/membership' },
-				{ id: 3, label: 'Mutual Aid', route: '/bylaws/mutual-aid' },
-				{ id: 4, label: 'Political Education', route: '/bylaws/political-education' }
+				{ id: 1, label: 'Communications', route: resolve('/bylaws/communications') },
+				{ id: 2, label: 'Membership', route: resolve('/bylaws/membership') },
+				{ id: 3, label: 'Mutual Aid', route: resolve('/bylaws/mutual-aid') },
+				{ id: 4, label: 'Political Education', route: resolve('/bylaws/political-education') }
 			]
 		},
 		{
 			id: 3,
 			label: 'Calendar',
-			route: '/calendar'
+			route: resolve('/calendar')
 		},
 		{
 			id: 4,
 			label: 'Join',
-			route: '/join'
+			route: resolve('/join')
 		},
 		{
 			id: 5,
 			label: 'Red Star Advertiser',
-			route: '/redstar',
+			route: resolve('/redstar'),
 			children: [
-				{ id: 1, label: 'Past Issues', route: '/redstar/past' },
-				{ id: 2, label: 'Union Plaza', route: '/redstar/news/the-real-deal-about-union-plaza' }
+				{ id: 1, label: 'Past Issues', route: resolve('/redstar/past') },
+				{ id: 2, label: 'Union Plaza', route: resolve('/redstar/news/the-real-deal-about-union-plaza') }
 			]
 		}
 	];
