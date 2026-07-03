@@ -3,7 +3,7 @@
 </svelte:head>
 
 <h3 style="text-align: left; padding-top: 20px;">
-	<a href="https://dsausa.org/join" target="_blank"
+	<a href="https://dsausa.org/join" target="_blank" class="text-blue-600 no-underline hover:underline"
 		>To join DSO, first click here to join DSA!</a
 	>
 </h3>
@@ -14,7 +14,7 @@
 </h5>
 
 <h3 style="text-align: left; padding-top: 20px;">
-	<a href="https://actionnetwork.org/campaigns/welcome-to-dso/" target="_blank"
+	<a href="https://actionnetwork.org/campaigns/welcome-to-dso/" target="_blank" class="text-blue-600 no-underline hover:underline"
 		>Join our next welcome call! Click for information.</a
 	>
 </h3>
